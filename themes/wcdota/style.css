@@ -8,6 +8,9 @@ Version: 1.0
 @import "./css/font.css";
 /* HEADER + FOOTER */
 
+/* HERO */
+@import "./css/hero.css";
+
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
 

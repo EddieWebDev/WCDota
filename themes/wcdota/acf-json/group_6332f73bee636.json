@@ -1,6 +1,6 @@
 {
     "key": "group_6332f73bee636",
-    "title": "Front Page Hero",
+    "title": "Hero Image",
     "fields": [
         {
             "key": "field_6332f74a8c79b",
@@ -32,7 +32,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/frontpagehero"
+                "value": "acf\/hero"
             }
         ]
     ],
@@ -44,5 +44,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664284820
+    "modified": 1664284954
 }
