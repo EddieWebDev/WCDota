@@ -15,6 +15,15 @@ function add_theme_scripts()
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
+
+// FONT THEMES ENQUE --------------------------------------------------
+
+function wpb_add_google_fonts()
+{
+  wp_enqueue_style('wpb-google-fonts', 'link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet"', false);
+}
+add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
+
 // EXCERPT LENGTH SUPPORT ---------------------------------------------
 
 function new_excerpt_length($length)
@@ -66,24 +75,24 @@ function my_acf_init_block_types()
 
     // register a testimonial block.
     acf_register_block_type(array(
-      'name'              => 'dummyblock',
-      'title'             => __('dummyblock'),
-      'description'       => __('A custom dummyblock block.'),
-      'render_template'   => 'template-parts/blocks/dummyblock-block.php',
-      'category'          => 'formatting',
-      'icon'              => 'admin-comments',
-      'keywords'          => array("dummyblock"),
+      'name' => 'dummyblock',
+      'title' => __('dummyblock'),
+      'description' => __('A custom dummyblock block.'),
+      'render_template' => 'template-parts/blocks/dummyblock-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("dummyblock"),
     ));
 
     /* block for our vision FRONT PAGE */
     acf_register_block_type(array(
-      'name'              => 'ourVision',
-      'title'             => __('ourVision'),
-      'description'       => __('A custom block for our visions.'),
-      'render_template'   => 'template-parts/blocks/our-vision-block.php',
-      'category'          => 'formatting',
-      'icon'              => 'admin-comments',
-      'keywords'          => array("ourVision"),
+      'name' => 'ourVision',
+      'title' => __('ourVision'),
+      'description' => __('A custom block for our visions.'),
+      'render_template' => 'template-parts/blocks/our-vision-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("ourVision"),
     ));
   }
 }

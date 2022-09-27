@@ -42,9 +42,9 @@
         },
         {
             "key": "field_6332bc115c0a5",
-            "label": "Button Text",
-            "name": "button_text",
-            "type": "text",
+            "label": "Link",
+            "name": "link",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -53,11 +53,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array"
         }
     ],
     "location": [
@@ -77,5 +73,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664269565
+    "modified": 1664270952
 }
