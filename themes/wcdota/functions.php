@@ -94,5 +94,16 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("ourVision"),
     ));
+
+    /* block for our vision FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'categoryStartBlock',
+      'title' => __('categoryStartBlock'),
+      'description' => __('A custom block for our product categories.'),
+      'render_template' => 'template-parts/blocks/category-start-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("categoryStartBlock"),
+    ));
   }
 }
