@@ -108,13 +108,13 @@ function my_acf_init_block_types()
 
     /* block for our Hero FRONT PAGE */
     acf_register_block_type(array(
-      'name' => 'frontPageHero',
-      'title' => __('frontPageHero'),
-      'description' => __('A custom block for our hero on the Front Page.'),
-      'render_template' => 'template-parts/blocks/hero-front-page-block.php',
+      'name' => 'Hero',
+      'title' => __('Hero'),
+      'description' => __('A custom block for our hero image.'),
+      'render_template' => 'template-parts/blocks/hero-block.php',
       'category' => 'formatting',
       'icon' => 'admin-comments',
-      'keywords' => array("frontPageHero"),
+      'keywords' => array("Hero"),
     ));
   }
 }
