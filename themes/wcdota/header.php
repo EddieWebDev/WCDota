@@ -13,7 +13,7 @@
     <header id="header" role="banner">
 
       <h2>HEADER</h2>
-      <?php get_template_part("header-template"); ?>
+      <?php get_template_part("/template-parts/header-template"); ?>
 
     </header>
     <div id="container">
