@@ -1,2 +1,37 @@
 2022-09-27T11:28:37+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 7
 
+2022-09-27T14:55:21+00:00 CRITICAL Uncaught Error: Call to undefined function the_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:26
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/her...', Array)
+#8 in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 26
+
+2022-09-27T14:57:34+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:26
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/her...', Array)
+#8 in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 26
+
+2022-09-27T14:59:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_price_html() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:26
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/her...', Arra in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 26
+

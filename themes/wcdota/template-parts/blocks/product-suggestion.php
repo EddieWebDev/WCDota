@@ -20,10 +20,14 @@ $args = array(
         </div>
 
         <div class="suggestion-text">
-            <h3>
+            <p class="suggestion-topic">Hot right now</p>
+
+            <h3 class="suggestion-title">
                 <?php the_title(); ?>
             </h3>
-            <a href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
+            <p class="suggestion-price"> <?php echo $product->get_price_html(); ?> </p>
+            <div class="suggestion-description"> <?php the_excerpt(); ?> </div>
+            <a class="suggestion-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
         </div>
 
     <?php
