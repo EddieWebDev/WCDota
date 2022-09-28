@@ -42,7 +42,8 @@ function register_my_menus()
     array(
       'header-menu' => __('Header Menu'),
       'login-menu' => __('Header Login Menu'),
-      'footer-menu' => __('Footer Menu')
+      'footer-nav-menu' => __('Footer Nav Menu'),
+      'footer-info-menu' => __('Footer Info Menu')
     )
   );
 }

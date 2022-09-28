@@ -8,6 +8,8 @@ Version: 1.0
 @import "./css/font.css";
 /* HEADER + FOOTER */
 
+@import "./css/footer.css";
+
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
 @import "./css/front-page/random-products.css";
@@ -17,6 +19,7 @@ Version: 1.0
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 /* WRAPPERS */
