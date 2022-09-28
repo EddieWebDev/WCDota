@@ -51,6 +51,12 @@ function register_my_menus()
 
 add_theme_support('post-thumbnails');
 
+function wpdocs_setup_theme() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 350, 350 );
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
+
 // NAV CLASS ----------------------------------------------------------
 
 add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
@@ -104,6 +110,16 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("categoryStartBlock"),
+    ));
+
+    acf_register_block_type(array(
+      'name' => 'randomProductsblock',
+      'title' => __('randomProductsblock'),
+      'description' => __('A custom block for our randomly shown products.'),
+      'render_template' => 'template-parts/blocks/random-products-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("randomProductsblock"),
     ));
   }
 }

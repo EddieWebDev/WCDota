@@ -10,6 +10,7 @@ Version: 1.0
 
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
+@import "./css/front-page/random-products.css";
 
 * {
   margin: 0;
