@@ -100,3 +100,20 @@ Stack trace:
 
 2022-09-29T11:28:53+00:00 CRITICAL syntax error, unexpected 'acf' (T_STRING), expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 87
 
+2022-09-29T12:27:02+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 180
+
+2022-09-29T12:27:30+00:00 CRITICAL Uncaught Error: Call to undefined function wp_clear_notices() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:174
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): add_shipping_banner('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(4): do_action('woocommerce_bef...')
+#4 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wr in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 174
+
+2022-09-29T12:31:23+00:00 CRITICAL syntax error, unexpected 'wc_print_notice' (T_STRING), expecting ':' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 181
+
+2022-09-29T12:33:24+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 183
+
