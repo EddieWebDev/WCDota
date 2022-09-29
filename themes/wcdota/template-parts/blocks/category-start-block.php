@@ -20,7 +20,7 @@ $categories = get_terms($args);
                     <a href="<?php echo $term_link?>">
                         <?php echo $category->name?>
                     </a>
-
+                <?php the_post_thumbnail(); ?>
                     
 
 
