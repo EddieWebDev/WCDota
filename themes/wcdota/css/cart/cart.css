@@ -1,4 +1,15 @@
+.product-thumbnail a img {
+  min-width: 80px;
+  height: auto;
+  border: 1px solid blueviolet;
+}
+
 .product-info {
   display: flex;
   flex-direction: column;
+}
+
+.posted_in,
+.posted_in a {
+  color: #c4c4c4;
 }
