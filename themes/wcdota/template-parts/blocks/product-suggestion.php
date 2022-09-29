@@ -26,7 +26,7 @@ $args = array(
                 <?php the_title(); ?>
             </h3>
 
-            <!-- Right now get price och get_sale_price is the same -->
+            <!-- displaying sale price in red -->
             <?php if ($product) :
                 $price = $product->get_regular_price();
                 $sale_price = $product->get_sale_price();
