@@ -1,7 +1,10 @@
 .product-thumbnail a img {
   min-width: 80px;
   height: auto;
-  border: 1px solid blueviolet;
+}
+
+.product-name a {
+  color: #353434;
 }
 
 .product-info {
@@ -12,4 +15,10 @@
 .posted_in,
 .posted_in a {
   color: #c4c4c4;
+  font-size: 0.8rem;
+}
+
+.amount {
+  color: #617c7c;
+  font-size: 0.8rem;
 }

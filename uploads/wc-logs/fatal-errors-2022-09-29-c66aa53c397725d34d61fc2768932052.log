@@ -88,3 +88,15 @@ Stack trace:
 #6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
 #7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307):  in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 36
 
+2022-09-29T11:26:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function _n(), 2 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 80 and at least 3 expected in C:\wamp64\www\wcdota\wp-includes\l10n.php:473
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php(80): _n('Categories:', 'woocommerce')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): bbloomer_cart_item_category('<a href="http:/...', Array, 'c51ce410c124a10...')
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<a href="http:/...', Array)
+#3 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(42): apply_filters('woocommerce_car...', '<a href="http:/...', Array, 'c51ce410c124a10...')
+#4 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#6 C:\wamp64 in C:\wamp64\www\wcdota\wp-includes\l10n.php on line 473
+
+2022-09-29T11:28:53+00:00 CRITICAL syntax error, unexpected 'acf' (T_STRING), expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 87
+
