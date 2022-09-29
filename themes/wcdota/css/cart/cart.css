@@ -12,8 +12,7 @@
   flex-direction: column;
 }
 
-.posted_in,
-.posted_in a {
+.product-category a {
   color: #c4c4c4;
   font-size: 0.8rem;
 }

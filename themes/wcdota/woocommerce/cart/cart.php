@@ -33,8 +33,12 @@ do_action('woocommerce_before_cart'); ?>
                         </td>
 
                         <td class="product-info">
-
+                            <!-- product category -->
+                            <div class="product-category">
+                                <?php echo wc_get_product_category_list($_product->get_id()) ?>
+                            </div>
                             <div class="product-name" data-title="<?php esc_attr_e('Product', 'woocommerce'); ?>">
+
                                 <?php
                                 if (!$product_permalink) {
                                     echo wp_kses_post(apply_filters('woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key) . '&nbsp;');

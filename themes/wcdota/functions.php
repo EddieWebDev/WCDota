@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/inc/cart-functions.php";
 
 add_action('after_setup_theme', 'woocommerce_support');
 function woocommerce_support()
@@ -63,167 +64,48 @@ function special_nav_class($classes, $item)
   return $classes;
 }
 
-//GET PRODUCT CATEGORY IN CART ------------------------------------------------------
 
-add_filter('woocommerce_cart_item_name', 'bbloomer_cart_item_category', 9999, 3);
+// CUSTOM ACF BLOCKS ------------------------------------------------------
 
-function bbloomer_cart_item_category($name, $cart_item)
+add_action('acf/init', 'my_acf_init_block_types');
+
+function my_acf_init_block_types()
 {
 
-  $product = $cart_item['data'];
-  if ($product->is_type('variation')) {
-    $product = wc_get_product($product->get_parent_id());
+  // Check function exists.
+  if (function_exists('acf_register_block_type')) {
+
+    // register a testimonial block.
+    acf_register_block_type(array(
+      'name' => 'dummyblock',
+      'title' => __('dummyblock'),
+      'description' => __('A custom dummyblock block.'),
+      'render_template' => 'template-parts/blocks/dummyblock-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("dummyblock"),
+    ));
+
+    /* block for our vision FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'ourVision',
+      'title' => __('ourVision'),
+      'description' => __('A custom block for our visions.'),
+      'render_template' => 'template-parts/blocks/our-vision-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("ourVision"),
+    ));
+
+    /* block for our vision FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'categoryStartBlock',
+      'title' => __('categoryStartBlock'),
+      'description' => __('A custom block for our product categories.'),
+      'render_template' => 'template-parts/blocks/category-start-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("categoryStartBlock"),
+    ));
   }
-
-  $cat_ids = $product->get_category_ids();
-
-  if ($cat_ids) $name .= '<br>' . wc_get_product_category_list($product->get_id());
-
-  return $name;
 }
-
-//DECREATE QTY BUTTON CART ------------------------------------------------------
-
-add_action('woocommerce_after_quantity_input_field', 'bbloomer_display_quantity_plus');
-
-function bbloomer_display_quantity_plus()
-{
-  echo '<button type="button" class="plus">+</button>';
-}
-
-//INCREASE QTY BUTTON CART ------------------------------------------------------
-add_action('woocommerce_before_quantity_input_field', 'bbloomer_display_quantity_minus');
-
-function bbloomer_display_quantity_minus()
-{
-  echo '<button type="button" class="minus">-</button>';
-}
-
-// Trigger update quantity script
-
-add_action('wp_footer', 'bbloomer_add_cart_quantity_plus_minus');
-
-function bbloomer_add_cart_quantity_plus_minus()
-{
-
-  if (!is_product() && !is_cart()) return;
-
-  wc_enqueue_js("   
-           
-      $(document).on( 'click', 'button.plus, button.minus', function() {
-  
-         var qty = $( this ).parent( '.quantity' ).find( '.qty' );
-         var val = parseFloat(qty.val());
-         var max = parseFloat(qty.attr( 'max' ));
-         var min = parseFloat(qty.attr( 'min' ));
-         var step = parseFloat(qty.attr( 'step' ));
- 
-         if ( $( this ).is( '.plus' ) ) {
-            if ( max && ( max <= val ) ) {
-               qty.val( max ).change();
-            } else {
-               qty.val( val + step ).change();
-            }
-         } else {
-            if ( min && ( min >= val ) ) {
-               qty.val( min ).change();
-            } else if ( val > 1 ) {
-               qty.val( val - step ).change();
-            }
-         }
- 
-      });
-        
-   ");
-}
-
-/* FUNCTION FOR AUTO UPDATE CART ------------------------------------------------------*/
-add_action('wp_head', function () { ?>
-  <style>
-    .woocommerce button[name="update_cart"],
-    .woocommerce input[name="update_cart"] {
-      display: none;
-    }
-  </style>
-<?php });
-
-add_action('wp_footer', function () { ?>
-  <script>
-    jQuery(function($) {
-      let timeout;
-      $('.woocommerce').on('change', 'input.qty', function() {
-        if (timeout !== undefined) {
-          clearTimeout(timeout);
-        }
-        timeout = setTimeout(function() {
-          $("[name='update_cart']").trigger("click"); // trigger cart update
-        }, 500); // .5 second delay
-      });
-    });
-  </script> <?php });
-
-          // SHIPPING BANNER ------------------------------------------------------
-          add_action("woocommerce_before_cart", "add_shipping_banner");
-
-          function add_shipping_banner()
-          {
-            $cart_total = WC()->cart->get_subtotal();
-            $minimum_amount = 2000;
-            $remaining = $minimum_amount - $cart_total;
-
-            wc_clear_notices();
-
-
-            if ($cart_total < $minimum_amount) {
-              wc_print_notice("Spend an additional $remaining SEK to get free shipping");
-            } else {
-              wc_print_notice("Free Shipping!");
-            }
-
-            wc_clear_notices();
-          }
-
-          // CUSTOM ACF BLOCKS ------------------------------------------------------
-
-          add_action('acf/init', 'my_acf_init_block_types');
-
-          function my_acf_init_block_types()
-          {
-
-            // Check function exists.
-            if (function_exists('acf_register_block_type')) {
-
-              // register a testimonial block.
-              acf_register_block_type(array(
-                'name' => 'dummyblock',
-                'title' => __('dummyblock'),
-                'description' => __('A custom dummyblock block.'),
-                'render_template' => 'template-parts/blocks/dummyblock-block.php',
-                'category' => 'formatting',
-                'icon' => 'admin-comments',
-                'keywords' => array("dummyblock"),
-              ));
-
-              /* block for our vision FRONT PAGE */
-              acf_register_block_type(array(
-                'name' => 'ourVision',
-                'title' => __('ourVision'),
-                'description' => __('A custom block for our visions.'),
-                'render_template' => 'template-parts/blocks/our-vision-block.php',
-                'category' => 'formatting',
-                'icon' => 'admin-comments',
-                'keywords' => array("ourVision"),
-              ));
-
-              /* block for our vision FRONT PAGE */
-              acf_register_block_type(array(
-                'name' => 'categoryStartBlock',
-                'title' => __('categoryStartBlock'),
-                'description' => __('A custom block for our product categories.'),
-                'render_template' => 'template-parts/blocks/category-start-block.php',
-                'category' => 'formatting',
-                'icon' => 'admin-comments',
-                'keywords' => array("categoryStartBlock"),
-              ));
-            }
-          }
