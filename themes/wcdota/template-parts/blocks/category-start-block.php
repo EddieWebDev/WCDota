@@ -1,15 +1,37 @@
-<div class="categories">
-    <div class="categories-header-div">
-        <h3 class="categories-header">
-            <?php the_field("header"); ?>
-        </h3>
-    </div>
-    <div class="vision-text">
-        <p>
-            <?php the_field("text"); ?>
-        </p>
-    </div>
+<?php
+$args = array(
+    "taxonomy" => "product_cat",
+    "hide_empty" => false,
+);
 
-    <?php get_categories()?>
+$categories = get_terms($args);
+?>
 
+
+
+<div>
+    <div>
+        <?php
+        foreach($categories as $category){
+            if("Uncategorized" !== $category->name){
+                //var_dump($category);
+                $term_link = get_term_link($category, "product_cat");
+                $term_id = $category->term_id;
+                $thumbnail_id = get_term_meta( $term_id, 'thumbnail_id', true );
+                var_dump($thumbnail_id);
+                $image = wp_get_attachment_url( $thumbnail_id );
+                var_dump($image);
+                echo "<img src='{$image}' alt='' width='762' height='365' />";
+                ?>
+                    <a href="<?php echo $term_link?>">
+                        <?php echo $category->name?>
+                    </a> 
+                <?php
+                
+
+            }
+        }
+        ?>
+    </div>
 </div>
+

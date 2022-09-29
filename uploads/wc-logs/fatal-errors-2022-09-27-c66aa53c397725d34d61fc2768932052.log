@@ -1,8 +1,12 @@
 2022-09-27T11:28:37+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 7
 
+<<<<<<< HEAD
 2022-09-27T14:10:54+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 22
 
 2022-09-27T14:34:15+00:00 CRITICAL Uncaught Error: Call to undefined function wpjb_form_get_categories() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:14
+=======
+2022-09-27T19:48:49+00:00 CRITICAL Uncaught Error: Function name must be a string in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:18
+>>>>>>> 15
 Stack trace:
 #0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
 #1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
@@ -11,5 +15,63 @@ Stack trace:
 #4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
 #5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
 #6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+<<<<<<< HEAD
 #7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/o in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 14
+=======
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', Array)
+#8 C:\wa in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 18
+
+2022-09-27T19:49:05+00:00 CRITICAL Uncaught Error: Function name must be a string in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:15
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', Array)
+#8 C:\wa in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 15
+
+2022-09-27T20:00:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 7 and exactly 2 expected in C:\wamp64\www\wcdota\wp-includes\category-template.php:1278
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php(7): get_the_terms(Array)
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#6  in C:\wamp64\www\wcdota\wp-includes\category-template.php on line 1278
+
+2022-09-27T20:01:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 7 and exactly 2 expected in C:\wamp64\www\wcdota\wp-includes\category-template.php:1278
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php(7): get_the_terms(Array)
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#6  in C:\wamp64\www\wcdota\wp-includes\category-template.php on line 1278
+
+2022-09-27T20:14:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 7 and exactly 2 expected in C:\wamp64\www\wcdota\wp-includes\category-template.php:1278
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php(7): get_the_terms(Array)
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#6  in C:\wamp64\www\wcdota\wp-includes\category-template.php on line 1278
+
+2022-09-27T22:47:24+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:10
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:ac in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 10
+>>>>>>> 15
 
