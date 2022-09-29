@@ -8,6 +8,7 @@ Version: 1.0
 @import "./css/font.css";
 /* HEADER + FOOTER */
 
+@import "./css/header.css";
 @import "./css/footer.css";
 
 /* FRONT PAGE */
@@ -52,15 +53,4 @@ Version: 1.0
   border: solid green 2px;
   display: flex;
   flex-direction: column;
-}
-
-/* HEADER */
-
-#header-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-#menu-header-menu {
-  display: flex;
 }

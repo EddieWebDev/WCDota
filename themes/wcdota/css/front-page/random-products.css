@@ -8,7 +8,7 @@
 }
 
 .random-product {
-    width: 100vw;
+    width: 100%;
     display: flex;
 }
 
@@ -26,29 +26,28 @@
 }
 
 .random-product-excerpt {
+    margin-bottom: 3rem;
 }
 
 .random-product-thumbnail {
     width: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #bfc7c7;
 }
 
 .random-product-thumbnail img {
-    width: 100%;
-    object-fit: contain;
+    max-width: 100%;
+    object-fit: fill;   
 }
 
-.random-product-button-div {
-    display: flex;
-    justify-content: left;
-    margin-top: 4rem;
-  }
-  
-  .random-product-button {
+.random-product-link {
     background-color: #617c7c;
-    padding: 15px 35px;
-    min-width: 100px;
+    width: 100%;
+    max-width: 150px;
+    padding: 15px 35px; 
     color: white;
-  }
+    font-size: 0.8rem;
+    text-align: center;
+}

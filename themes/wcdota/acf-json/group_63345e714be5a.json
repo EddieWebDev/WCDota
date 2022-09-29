@@ -1,23 +1,7 @@
 {
     "key": "group_63345e714be5a",
     "title": "Random products",
-    "fields": [
-        {
-            "key": "field_633464d7eda7f",
-            "label": "Link",
-            "name": "link",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        }
-    ],
+    "fields": [],
     "location": [
         [
             {
@@ -35,5 +19,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664378097
+    "modified": 1664442489
 }

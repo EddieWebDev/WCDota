@@ -10,7 +10,7 @@
         $random_products = get_posts( $args );
 
         foreach ( $random_products as $post ) : setup_postdata( $post ); ?>
-        <li class="random-product">
+        <div class="random-product">
             <div class="random-product-text">
                 <div class="random-product-title-small">
                     <h2></h2><?php the_title(); ?>
@@ -21,23 +21,13 @@
                 <div class="random-product-excerpt">
                     <?php the_excerpt(); ?>
                 </div>
-                <?php
-                $link = get_field("link");
-                if ($link) :
-                    $link_url = $link["url"];
-                    $link_title = $link["title"]; ?>
-                    <div class="random-product-button-div">
-                        <a class="random-product-button" href="<?= $link_url ?>">
-                            <?= $link_title ?>
-                        </a>
-                    </div>
-                <?php endif; ?>
+                <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
             </div>
 
             <div class="random-product-thumbnail">
                 <?php the_post_thumbnail(); ?>
             </div>
-        <li>
+                </div>
         <?php endforeach; 
         
         wp_reset_postdata();
@@ -45,7 +35,7 @@
         $random_products = get_posts( $args );
 
         foreach ( $random_products as $post ) : setup_postdata( $post ); ?>
-        <li class="random-product">
+        <div class="random-product">
             <div class="random-product-thumbnail">
                 <?php the_post_thumbnail(); ?>
             </div>
@@ -60,21 +50,11 @@
                 <div class="random-product-excerpt">
                     <?php the_excerpt(); ?>
                 </div>
-                <?php
-                $link = get_field("link");
-                if ($link) :
-                    $link_url = $link["url"];
-                    $link_title = $link["title"]; ?>
-                    <div class="random-product-button-div">
-                        <a class="random-product-button" href="<?= $link_url ?>">
-                            <?= $link_title ?>
-                        </a>
-                    </div>
-                <?php endif; ?>
+                <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
             </div>
 
             
-        <li>
+                </div>
         <?php endforeach; 
         
         wp_reset_postdata();
