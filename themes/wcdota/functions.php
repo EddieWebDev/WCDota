@@ -63,6 +63,25 @@ function special_nav_class($classes, $item)
   return $classes;
 }
 
+//GET PRODUCT CATEGORY IN CART ------------------------------------------------------
+
+add_filter('woocommerce_cart_item_name', 'bbloomer_cart_item_category', 9999, 3);
+
+function bbloomer_cart_item_category($name, $cart_item, $cart_item_key)
+{
+
+  $product = $cart_item['data'];
+  if ($product->is_type('variation')) {
+    $product = wc_get_product($product->get_parent_id());
+  }
+
+  $cat_ids = $product->get_category_ids();
+
+  if ($cat_ids) $name .= '<br>' . wc_get_product_category_list($product->get_id(), ', ', '<span class="posted_in">' . _n('Category:',   'Categories:', count($cat_ids), 'woocommerce') . ' ', '</span>');
+
+  return $name;
+}
+
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 
 add_action('acf/init', 'my_acf_init_block_types');
