@@ -28,7 +28,7 @@ $args = array(
 
             <!-- Right now get price och get_sale_price is the same -->
             <?php if ($product) :
-                $price = $product->get_price();
+                $price = $product->get_regular_price();
                 $sale_price = $product->get_sale_price();
                 if ($sale_price) : ?>
                     <div>
@@ -41,7 +41,7 @@ $args = array(
                     </div>
                 <?php else : ?>
                     <p class="suggestion-price">
-                        <?php echo $price ?> SEK
+                        <?php echo $product->get_price(); ?> SEK
                     </p>
                 <?php endif; ?>
             <?php endif ?>
