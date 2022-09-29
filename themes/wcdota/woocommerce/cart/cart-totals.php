@@ -12,7 +12,6 @@ defined('ABSPATH') || exit;
         <tr class="cart-subtotal">
             <th><?php esc_html_e('Subtotal', 'woocommerce'); ?></th>
             <td data-title="<?php esc_attr_e('Total', 'woocommerce'); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
-
         </tr>
 
         <?php foreach (WC()->cart->get_coupons() as $code => $coupon) : ?>
@@ -82,7 +81,7 @@ defined('ABSPATH') || exit;
 
         <tr class="order-total">
             <th><?php esc_html_e('Tax', 'woocommerce'); ?></th>
-            <td data-title="<?php esc_attr_e('Total', 'woocommerce'); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
+            <td> <?php echo WC()->cart->get_total_tax() . " kr"; ?></td>
         </tr>
 
         <?php do_action('woocommerce_cart_totals_after_order_total'); ?>

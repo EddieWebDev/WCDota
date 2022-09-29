@@ -207,3 +207,16 @@ Stack trace:
 #6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
 #7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template( in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
 
+2022-09-29T14:00:54+00:00 CRITICAL Uncaught Error: Object of class WC_Cart could not be converted to string in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_ in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T14:05:34+00:00 CRITICAL syntax error, unexpected '.', expecting end of file in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
