@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_6332e5d282e9f",
-            "label": "Category title",
-            "name": "",
+            "label": "Header",
+            "name": "header",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,27 +23,8 @@
         },
         {
             "key": "field_6332e5f3f88d5",
-            "label": "Category content",
-            "name": "category_content",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6332e640082e5",
-            "label": "Product categories",
-            "name": "product_categories",
+            "label": "Text",
+            "name": "text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -77,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664282455
+    "modified": 1664287979
 }

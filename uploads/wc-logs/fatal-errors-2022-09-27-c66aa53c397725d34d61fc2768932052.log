@@ -1,2 +1,15 @@
 2022-09-27T11:28:37+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 7
 
+2022-09-27T14:10:54+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 22
+
+2022-09-27T14:34:15+00:00 CRITICAL Uncaught Error: Call to undefined function wpjb_form_get_categories() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:14
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/o in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 14
+
