@@ -117,3 +117,27 @@ Stack trace:
 
 2022-09-29T12:33:24+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 183
 
+2022-09-29T13:08:39+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::parent_id() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:39
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php( in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 39
+
+2022-09-29T13:12:48+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variation as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:44
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307 in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 44
+
+2022-09-29T13:15:07+00:00 CRITICAL syntax error, unexpected '31' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 39
+

@@ -35,7 +35,13 @@ do_action('woocommerce_before_cart'); ?>
                         <td class="product-info">
                             <!-- product category -->
                             <div class="product-category">
-                                <?php echo wc_get_product_category_list($_product->get_id()) ?>
+                                <!-- IF product is a variant, choose its parent ID -->
+                                <?php if (wp_get_post_parent_id($_product->get_id())) {
+                                    echo wc_get_product_category_list(wp_get_post_parent_id($_product->get_id()));
+                                } else {
+                                    echo wc_get_product_category_list($_product->get_id());
+                                } ?>
+
                             </div>
                             <div class="product-name" data-title="<?php esc_attr_e('Product', 'woocommerce'); ?>">
 
