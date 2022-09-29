@@ -1,0 +1,14 @@
+.categories-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+

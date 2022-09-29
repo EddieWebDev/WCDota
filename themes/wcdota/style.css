@@ -14,6 +14,7 @@ Version: 1.0
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
 @import "./css/front-page/random-products.css";
+@import "./css/front-page/categories.css";
 
 * {
   margin: 0;

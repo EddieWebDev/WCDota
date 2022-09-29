@@ -6,3 +6,68 @@
 
 2022-09-29T09:04:25+00:00 CRITICAL syntax error, unexpected 'acf_register_block_type' (T_STRING) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 126
 
+2022-09-29T11:05:10+00:00 CRITICAL Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php:93
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php(147): ACF_Data->_key('local')
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\acf-helper-functions.php(186): ACF_Data->get('local')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(53): acf_is_filter_enabled('local')
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(70): acf_is_local_enabled()
+#4 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(448): acf_get_local_store('fields')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(528): acf_is_local_field_key('header')
+#6 C: in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php on line 93
+
+2022-09-29T11:05:18+00:00 CRITICAL Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php:93
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php(147): ACF_Data->_key('local')
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\acf-helper-functions.php(186): ACF_Data->get('local')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(53): acf_is_filter_enabled('local')
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(70): acf_is_local_enabled()
+#4 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(448): acf_get_local_store('fields')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(528): acf_is_local_field_key('header')
+#6 C: in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php on line 93
+
+2022-09-29T11:05:39+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:29
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', A in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 29
+
+2022-09-29T11:08:11+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:30
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', A in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 30
+
+2022-09-29T11:13:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_category_link(), 0 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31 and exactly 1 expected in C:\wamp64\www\wcdota\wp-includes\category-template.php:20
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php(31): get_category_link()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+ in C:\wamp64\www\wcdota\wp-includes\category-template.php on line 20
+
+2022-09-29T11:14:37+00:00 CRITICAL Uncaught Error: Call to undefined function the_category_link() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:31
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31
+
+2022-09-29T11:16:13+00:00 CRITICAL syntax error, unexpected '?>', expecting variable (T_VARIABLE) or '{' or '$' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31
+
