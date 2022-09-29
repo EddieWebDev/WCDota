@@ -25,7 +25,27 @@ $args = array(
             <h3 class="suggestion-title">
                 <?php the_title(); ?>
             </h3>
-            <p class="suggestion-price"> <?php echo $product->get_price_html(); ?> </p>
+
+            <!-- Right now get price och get_sale_price is the same -->
+            <?php if ($product) :
+                $price = $product->get_price();
+                $sale_price = $product->get_sale_price();
+                if ($sale_price) : ?>
+                    <div>
+                        <span class="suggestion-price overwritten">
+                            <?php echo $price ?> SEK
+                        </span>
+                        <span class="discount-price">
+                            <?php echo $sale_price ?> SEK
+                        </span>
+                    </div>
+                <?php else : ?>
+                    <p class="suggestion-price">
+                        <?php echo $price ?> SEK
+                    </p>
+                <?php endif; ?>
+            <?php endif ?>
+
             <div class="suggestion-description"> <?php the_excerpt(); ?> </div>
             <a class="suggestion-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
         </div>
