@@ -116,5 +116,16 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("Hero"),
     ));
+
+    /* block for our header NEWS PAGE */
+    acf_register_block_type(array(
+      'name' => 'NewsHeader',
+      'title' => __('NewsHeader'),
+      'description' => __('A custom block for our news header.'),
+      'render_template' => 'template-parts/blocks/news-header.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("NewsHeader"),
+    ));
   }
 }
