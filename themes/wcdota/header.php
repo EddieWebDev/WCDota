@@ -12,10 +12,8 @@
   <div id="wrapper" class="hfeed">
     <header id="header" role="banner">
 
-      <h2>HEADER</h2>
       <?php get_template_part("/template-parts/header-template"); ?>
 
     </header>
     <div id="container">
-      <h2>CONTAINER</h2>
       <main id="main" role="main">

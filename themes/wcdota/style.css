@@ -7,9 +7,11 @@ Version: 1.0
 */
 @import "./css/font.css";
 /* HEADER + FOOTER */
-
 @import "./css/header.css";
 @import "./css/footer.css";
+
+/* HERO */
+@import "./css/hero.css";
 
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
@@ -24,34 +26,33 @@ Version: 1.0
   list-style: none;
 }
 
+
 /* WRAPPERS */
 
 #wrapper {
-  border: solid red 2px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 #header {
-  border: solid blue 2px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  width: 100%;
 }
 
 #container {
-  border: solid orange 2px;
   display: flex;
   flex-direction: column;
 }
 
 #main {
-  border: solid yellow 2px;
   display: flex;
   flex-direction: column;
 }
 
 #footer {
-  border: solid green 2px;
   display: flex;
   flex-direction: column;
 }

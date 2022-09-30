@@ -70,6 +70,9 @@ function special_nav_class($classes, $item)
   return $classes;
 }
 
+// DROP DOWN MENU ----------------------------------------------------------
+
+
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 
 add_action('acf/init', 'my_acf_init_block_types');
@@ -121,6 +124,15 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("randomProductsblock"),
+    /* block for our Hero FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'Hero',
+      'title' => __('Hero'),
+      'description' => __('A custom block for our hero image.'),
+      'render_template' => 'template-parts/blocks/hero-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("Hero"),
     ));
   }
 }

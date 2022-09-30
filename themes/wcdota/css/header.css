@@ -1,16 +1,67 @@
+header a {
+    color: white;
+}
+header h1 {
+  color: white;
+}
+
 #header-nav {
     display: flex;
-    justify-content: space-around;
-  }
+    align-items: center;
+}
   
-  #menu-header-menu {
-    display: flex;
-  }
-
 #menu-header-menu {
     display: flex;
 }
 
+.menu-header-menu-container {
+  width: 40%;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.header-search-cart {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  align-items: center;
+}
+
+#menu-header-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
 #menu-header-menu-1 {
     display: flex;
+}
+
+.menu-item-has-children {
+  position: relative;
+  
+}
+
+.menu-item-has-children:hover .sub-menu{
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+}
+
+.menu-item-object-product_cat {
+
 }
