@@ -1,3 +1,11 @@
+.woocommerce-cart-form {
+  margin: 0 5rem;
+}
+
+.woocommerce table.shop_table {
+  border: none;
+}
+
 .product-thumbnail a img {
   min-width: 80px;
   height: auto;
@@ -57,6 +65,10 @@
   text-align: center;
 }
 
+.cart_totals {
+  margin-right: 5rem;
+}
+
 .coupon button.button {
   background-color: white;
   color: #353434;
@@ -65,5 +77,14 @@
 }
 
 .wc-proceed-to-checkout a.button.alt {
+  background-color: #617c7c;
+  font-weight: 300;
+  font-size: 1em;
+  width: 30%;
+  padding: 0.5em;
+  float: right;
+}
+
+.woocommerce a.button.alt:hover {
   background-color: #617c7c;
 }
