@@ -25,16 +25,20 @@ Version: 1.0
   list-style: none;
 }
 
+
 /* WRAPPERS */
 
 #wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 #header {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  width: 100%;
 }
 
 #container {

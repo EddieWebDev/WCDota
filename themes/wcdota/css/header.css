@@ -1,11 +1,18 @@
+header a {
+    color: white;
+}
+header h1 {
+  color: white;
+}
+
 #header-nav {
     display: flex;
     align-items: center;
-  }
+}
   
-  #menu-header-menu {
+#menu-header-menu {
     display: flex;
-  }
+}
 
 .menu-header-menu-container {
   width: 40%;
