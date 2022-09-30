@@ -7,7 +7,7 @@ header h1 {
 
 #header-nav {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
   
 #menu-header-menu {
@@ -34,7 +34,7 @@ header h1 {
 
 .header-search-cart {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 10%;
   align-items: center;
 }
@@ -48,13 +48,11 @@ header h1 {
     display: flex;
 }
 
+
+
 .menu-item-has-children {
   position: relative;
   
-}
-
-.menu-item-has-children:hover .sub-menu{
-  display: block;
 }
 
 .sub-menu {
@@ -62,6 +60,23 @@ header h1 {
   position: absolute;
 }
 
-.menu-item-object-product_cat {
-
+.menu-item-has-children:hover .sub-menu{
+  display: block;
+  background-color: white;
+  min-width: 10rem;
+  padding-bottom: 1rem;
+  border-radius: 7px;
+  /* margin-top: 1rem; */
 }
+
+.menu-item-has-children:hover .sub-menu li {
+  padding: 1rem;
+}
+
+.menu-item-has-children:hover .sub-menu li a{
+  color: #617C7C;
+}
+
+
+
+
