@@ -1,12 +1,12 @@
 {
-    "key": "group_6332e57ea2fa6",
-    "title": "Category-start-block",
+    "key": "group_63356dd81dfd8",
+    "title": "product block",
     "fields": [
         {
-            "key": "field_6332e5d282e9f",
-            "label": "title",
-            "name": "title",
-            "type": "text",
+            "key": "field_63356de68c639",
+            "label": "block bottom",
+            "name": "",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
         },
         {
-            "key": "field_6332e5f3f88d5",
-            "label": "content",
-            "name": "content",
+            "key": "field_63356ddf8c638",
+            "label": "title",
+            "name": "title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,9 +42,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf\/categorystartblock"
+                "value": "product"
             }
         ]
     ],
@@ -58,5 +56,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664553514
+    "modified": 1664445960
 }

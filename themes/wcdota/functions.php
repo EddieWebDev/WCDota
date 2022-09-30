@@ -42,7 +42,8 @@ function register_my_menus()
     array(
       'header-menu' => __('Header Menu'),
       'login-menu' => __('Header Login Menu'),
-      'footer-menu' => __('Footer Menu')
+      'footer-nav-menu' => __('Footer Nav Menu'),
+      'footer-info-menu' => __('Footer Info Menu')
     )
   );
 }
@@ -50,6 +51,12 @@ function register_my_menus()
 // THUMBNAIL SUPPORT --------------------------------------------------
 
 add_theme_support('post-thumbnails');
+
+function wpdocs_setup_theme() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 350, 350 );
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
 
 // NAV CLASS ----------------------------------------------------------
 
@@ -106,15 +113,14 @@ function my_acf_init_block_types()
       'keywords' => array("categoryStartBlock"),
     ));
 
-    /* block for our Hero FRONT PAGE */
     acf_register_block_type(array(
-      'name' => 'Hero',
-      'title' => __('Hero'),
-      'description' => __('A custom block for our hero image.'),
-      'render_template' => 'template-parts/blocks/hero-block.php',
+      'name' => 'randomProductsblock',
+      'title' => __('randomProductsblock'),
+      'description' => __('A custom block for our randomly shown products.'),
+      'render_template' => 'template-parts/blocks/random-products-block.php',
       'category' => 'formatting',
       'icon' => 'admin-comments',
-      'keywords' => array("Hero"),
+      'keywords' => array("randomProductsblock"),
     ));
   }
 }
