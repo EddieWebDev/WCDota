@@ -1,0 +1,17 @@
+.news-page-header {
+  background-color: #bfc7c7;
+  text-align: center;
+  padding: 4rem;
+  width: 100%;
+}
+
+.news-page-header h2 {
+  font-size: 2em;
+  margin-bottom: 2rem;
+}
+
+.news-page-header p {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
