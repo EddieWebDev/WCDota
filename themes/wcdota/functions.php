@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/inc/custom-post-types.php";
+
 add_action('after_setup_theme', 'woocommerce_support');
 function woocommerce_support()
 {
