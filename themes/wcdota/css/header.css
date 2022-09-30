@@ -48,16 +48,35 @@ header h1 {
     display: flex;
 }
 
+
+
 .menu-item-has-children {
   position: relative;
   
-}
-
-.menu-item-has-children:hover .sub-menu{
-  display: block;
 }
 
 .sub-menu {
   display: none;
   position: absolute;
 }
+
+.menu-item-has-children:hover .sub-menu{
+  display: block;
+  background-color: white;
+  min-width: 10rem;
+  padding-bottom: 1rem;
+  border-radius: 7px;
+  /* margin-top: 1rem; */
+}
+
+.menu-item-has-children:hover .sub-menu li {
+  padding: 1rem;
+}
+
+.menu-item-has-children:hover .sub-menu li a{
+  color: #617C7C;
+}
+
+
+
+
