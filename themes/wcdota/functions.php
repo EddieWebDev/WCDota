@@ -124,6 +124,7 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("randomProductsblock"),
+    ));
     /* block for our Hero FRONT PAGE */
     acf_register_block_type(array(
       'name' => 'Hero',
