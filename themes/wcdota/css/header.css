@@ -1,14 +1,40 @@
 #header-nav {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
   }
   
   #menu-header-menu {
     display: flex;
   }
 
+.menu-header-menu-container {
+  width: 40%;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.header-search-cart {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  align-items: center;
+}
+
 #menu-header-menu {
     display: flex;
+    justify-content: space-around;
 }
 
 #menu-header-menu-1 {

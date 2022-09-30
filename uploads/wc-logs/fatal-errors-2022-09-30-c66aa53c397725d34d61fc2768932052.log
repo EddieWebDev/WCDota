@@ -4,3 +4,13 @@
 
 2022-09-30T13:47:50+00:00 CRITICAL Cannot redeclare register_my_menus() (previously declared in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:39) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 75
 
+2022-09-30T14:08:04+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 119
+
+2022-09-30T14:08:11+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 119
+
+2022-09-30T14:08:13+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 119
+
+2022-09-30T14:08:14+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 119
+
+2022-09-30T14:08:14+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 119
+
