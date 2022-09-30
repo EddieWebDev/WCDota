@@ -63,3 +63,7 @@
   font-weight: 200;
   font-size: 0.6rem;
 }
+
+.wc-proceed-to-checkout a.button.alt {
+  background-color: #617c7c;
+}
