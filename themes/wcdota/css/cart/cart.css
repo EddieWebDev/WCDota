@@ -48,3 +48,18 @@
   font-size: 1.25em;
   font-weight: 200;
 }
+
+#coupon_code,
+#coupon_code::placeholder {
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.coupon button.button {
+  background-color: white;
+  color: #353434;
+  font-weight: 200;
+  font-size: 0.6rem;
+}
