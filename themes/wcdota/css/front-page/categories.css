@@ -8,10 +8,12 @@
 .categories-intro {
     width: 50%;
     margin-bottom: 10rem;
+    
 }
 
 .categories-intro h2 {
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .categories-container {
@@ -39,15 +41,22 @@
 }
 
 .category-text {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: left;
 }
 
-.category-text a {
-    margin-top: 100px;
+.category-name {
+    margin-top: 1rem;
+}
+
+.category-description {
+    margin-top: 1rem;
 }
 
 .category-link {
-    margin-top: 20rem;
+    margin-top: 1rem;
+    color: rgb(110, 109, 109);
 }
 

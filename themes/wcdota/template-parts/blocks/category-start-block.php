@@ -34,11 +34,9 @@ $categories = get_terms($args);
                             </a>
                         </div>
                         <div class="category-text">
-                            <a href="<?php echo $term_link?>">
-                                <h2><?php echo $category->name?></h2>
-                            </a>
-                            <p><?php echo $category->description;?></p>
-                            <a class="category-link" href="/wcdota/product-category/<?php echo $category->slug; ?>">Read More</a>
+                            <h2 class="category-name"><?php echo $category->name?></h2>
+                            <p class="category-description"><?php echo $category->description;?></p>
+                            <a class="category-link" href="<?php echo $term_link?>">VIEW COLLECTION</a>
                         </div>
                     </div>
                     <?php
