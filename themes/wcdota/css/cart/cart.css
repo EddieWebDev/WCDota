@@ -21,3 +21,30 @@
   color: #617c7c;
   font-size: 0.8rem;
 }
+
+.woocommerce-message {
+  background-color: #8fae1b;
+  color: white;
+  text-align: center;
+}
+
+.input-text {
+  border: hidden;
+  font-weight: bold;
+}
+
+.minus,
+.plus {
+  background-color: #bfc7c7;
+  border-radius: 50%;
+  border: hidden;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+}
+
+.product-remove a.remove {
+  color: #353434 !important;
+  font-size: 1.25em;
+  font-weight: 200;
+}

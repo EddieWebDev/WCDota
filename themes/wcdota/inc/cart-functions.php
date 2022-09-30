@@ -94,7 +94,7 @@ function add_shipping_banner()
 
 
     if ($cart_total < $minimum_amount) {
-        wc_print_notice("Spend an additional $remaining SEK to get free shipping");
+        wc_print_notice("Spend an additional $remaining SEK to get free shipping.");
     } else {
         wc_print_notice("Free Shipping!");
     }
