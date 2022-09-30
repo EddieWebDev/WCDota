@@ -38,8 +38,8 @@
 }
 
 .random-product-thumbnail img {
-    max-width: 100%;
-    object-fit: fill;   
+    width: 80%;
+    height: 80%;
 }
 
 .random-product-link {
