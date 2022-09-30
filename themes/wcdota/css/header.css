@@ -7,7 +7,7 @@ header h1 {
 
 #header-nav {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
   
 #menu-header-menu {
@@ -34,7 +34,7 @@ header h1 {
 
 .header-search-cart {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 10%;
   align-items: center;
 }
@@ -60,8 +60,4 @@ header h1 {
 .sub-menu {
   display: none;
   position: absolute;
-}
-
-.menu-item-object-product_cat {
-
 }
