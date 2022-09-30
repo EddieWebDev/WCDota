@@ -70,6 +70,9 @@ function special_nav_class($classes, $item)
   return $classes;
 }
 
+// DROP DOWN MENU ----------------------------------------------------------
+
+
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 
 add_action('acf/init', 'my_acf_init_block_types');

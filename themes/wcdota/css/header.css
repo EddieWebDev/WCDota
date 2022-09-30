@@ -14,3 +14,21 @@
 #menu-header-menu-1 {
     display: flex;
 }
+
+.menu-item-has-children {
+  position: relative;
+  
+}
+
+.menu-item-has-children:hover .sub-menu{
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+}
+
+.menu-item-object-product_cat {
+
+}

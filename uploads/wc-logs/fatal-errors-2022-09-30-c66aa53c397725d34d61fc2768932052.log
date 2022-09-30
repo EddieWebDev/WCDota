@@ -1,0 +1,6 @@
+2022-09-30T13:05:20+00:00 CRITICAL syntax error, unexpected ''hide_empty'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 76
+
+2022-09-30T13:46:50+00:00 CRITICAL Cannot redeclare register_my_menus() (previously declared in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:39) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 75
+
+2022-09-30T13:47:50+00:00 CRITICAL Cannot redeclare register_my_menus() (previously declared in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:39) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 75
+
