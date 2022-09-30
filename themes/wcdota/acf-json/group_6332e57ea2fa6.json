@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_6332e5d282e9f",
-            "label": "Header",
-            "name": "header",
+            "label": "title",
+            "name": "title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,8 @@
         },
         {
             "key": "field_6332e5f3f88d5",
-            "label": "Text",
-            "name": "text",
+            "label": "content",
+            "name": "content",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -58,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664287979
+    "modified": 1664553514
 }
