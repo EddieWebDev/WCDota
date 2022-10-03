@@ -118,5 +118,16 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("Hero"),
     ));
+
+    /* block for our SHOPS */
+    acf_register_block_type(array(
+      'name' => 'our-shops',
+      'title' => __('our-shops'),
+      'description' => __('A custom block for our shops.'),
+      'render_template' => 'template-parts/blocks/our-shops.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("our-shops"),
+    ));
   }
 }
