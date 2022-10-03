@@ -27,6 +27,7 @@ Stack trace:
 #6 C: in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php on line 93
 
 2022-09-29T11:05:39+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:29
+2022-09-29T09:52:12+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:32
 Stack trace:
 #0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
 #1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
@@ -34,10 +35,17 @@ Stack trace:
 #3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
 #4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
 #5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+<<<<<<< HEAD
 #6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
 #7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', A in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 29
 
 2022-09-29T11:08:11+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:30
+=======
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/he in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 32
+
+2022-09-29T09:52:18+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:31
+>>>>>>> 13
 Stack trace:
 #0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
 #1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
@@ -45,6 +53,7 @@ Stack trace:
 #3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
 #4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
 #5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+<<<<<<< HEAD
 #6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
 #7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', A in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 30
 
@@ -59,6 +68,12 @@ Stack trace:
  in C:\wamp64\www\wcdota\wp-includes\category-template.php on line 20
 
 2022-09-29T11:14:37+00:00 CRITICAL Uncaught Error: Call to undefined function the_category_link() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:31
+=======
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/he in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 31
+
+2022-09-29T09:52:42+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:32
+>>>>>>> 13
 Stack trace:
 #0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
 #1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
@@ -66,8 +81,24 @@ Stack trace:
 #3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
 #4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
 #5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+<<<<<<< HEAD
 #6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
 #7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31
 
 2022-09-29T11:16:13+00:00 CRITICAL syntax error, unexpected '?>', expecting variable (T_VARIABLE) or '{' or '$' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31
+=======
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/her. in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 32
+
+2022-09-29T09:54:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::regular_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:31
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 31
+>>>>>>> 13
 

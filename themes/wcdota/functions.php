@@ -135,5 +135,15 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("Hero"),
     ));
+      /* block for our product suggestion FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'productSuggestion',
+      'title' => __('productSuggestionBlock'),
+      'description' => __('A custom block for our product suggestion on the Front Page.'),
+      'render_template' => 'template-parts/blocks/product-suggestion.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("productSuggestion"),
+    ));
   }
 }
