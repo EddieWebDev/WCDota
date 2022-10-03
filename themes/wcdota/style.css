@@ -32,6 +32,11 @@ Version: 1.0
 /*  CART PAGE */
 @import "./css/cart/cart.css";
 
+/*  SINGLE PRODUCT PAGE */
+@import "./css/single-product/single-product.css";
+
+
+
 * {
   margin: 0;
   padding: 0;
