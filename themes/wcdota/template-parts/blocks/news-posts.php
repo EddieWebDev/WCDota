@@ -15,9 +15,13 @@
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <div class="news-container">
 
+                    <?php the_post_thumbnail("thumbnail"); ?>
+
                     <h3 class="news-name"><?php the_title(); ?></h3>
 
-                    <?php the_content(); ?>
+                    <?php the_excerpt(); ?>
+
+                    <a href="<?php the_permalink(); ?>">Read More</a>
 
                 </div>
             <?php endwhile; ?>
