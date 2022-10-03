@@ -29,6 +29,9 @@ Version: 1.0
 @import "./css/news-page/header.css";
 @import "./css/news-page/news-posts.css";
 
+/*  CART PAGE */
+@import "./css/cart/cart.css";
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,98 @@
+.woocommerce-cart-form {
+  margin: 0 5rem;
+}
+
+.woocommerce table.shop_table {
+  border: none;
+}
+
+.product-thumbnail a img {
+  min-width: 80px;
+  height: auto;
+}
+
+.product-name a {
+  color: #353434;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category a {
+  color: #c4c4c4;
+  font-size: 0.8rem;
+}
+
+.amount {
+  color: #617c7c;
+  font-size: 0.8rem;
+}
+
+.woocommerce-message {
+  background-color: #8fae1b;
+  color: white;
+  text-align: center;
+}
+
+.input-text {
+  border: hidden;
+  font-weight: bold;
+}
+
+.minus,
+.plus {
+  background-color: #bfc7c7;
+  border-radius: 50%;
+  border: hidden;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+}
+
+
+/* REMOVING INPUT UP AND DOWN ARROW */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-remove a.remove {
+  color: #353434 !important;
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
+#coupon_code,
+#coupon_code::placeholder {
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.cart_totals {
+  margin-right: 5rem;
+}
+
+.coupon button.button {
+  background-color: white;
+  color: #353434;
+  font-weight: 200;
+  font-size: 0.6rem;
+}
+
+.wc-proceed-to-checkout a.button.alt {
+  background-color: #617c7c;
+  font-weight: 300;
+  font-size: 1em;
+  width: 30%;
+  padding: 0.5em;
+  float: right;
+}
+
+.woocommerce a.button.alt:hover {
+  background-color: #617c7c;
+}

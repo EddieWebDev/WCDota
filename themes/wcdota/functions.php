@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/inc/cart-functions.php";
 
 require_once __DIR__ . "/inc/custom-post-types.php";
 
