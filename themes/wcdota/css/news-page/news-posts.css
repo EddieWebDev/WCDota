@@ -1,0 +1,42 @@
+.news-section {
+  background-color: #bfc7c7;
+}
+
+.news-section > div {
+  margin-bottom: 5rem;
+}
+
+.news-array {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.news-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.img-div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.post-div h3,
+p,
+a {
+  margin-bottom: 1rem;
+  font-size: 0.8em;
+}
+
+.post-div a {
+  color: #617c7c;
+}

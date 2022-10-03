@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . "/inc/cart-functions.php";
+
+require_once __DIR__ . "/inc/custom-post-types.php";
 
 add_action('after_setup_theme', 'woocommerce_support');
 function woocommerce_support()
@@ -42,7 +45,8 @@ function register_my_menus()
     array(
       'header-menu' => __('Header Menu'),
       'login-menu' => __('Header Login Menu'),
-      'footer-menu' => __('Footer Menu')
+      'footer-nav-menu' => __('Footer Nav Menu'),
+      'footer-info-menu' => __('Footer Info Menu')
     )
   );
 }
@@ -50,6 +54,12 @@ function register_my_menus()
 // THUMBNAIL SUPPORT --------------------------------------------------
 
 add_theme_support('post-thumbnails');
+
+function wpdocs_setup_theme() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 350, 350 );
+}
+add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
 
 // NAV CLASS ----------------------------------------------------------
 
@@ -62,6 +72,9 @@ function special_nav_class($classes, $item)
   }
   return $classes;
 }
+
+// DROP DOWN MENU ----------------------------------------------------------
+
 
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 
@@ -106,6 +119,15 @@ function my_acf_init_block_types()
       'keywords' => array("categoryStartBlock"),
     ));
 
+    acf_register_block_type(array(
+      'name' => 'randomProductsblock',
+      'title' => __('randomProductsblock'),
+      'description' => __('A custom block for our randomly shown products.'),
+      'render_template' => 'template-parts/blocks/random-products-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("randomProductsblock"),
+    ));
     /* block for our Hero FRONT PAGE */
     acf_register_block_type(array(
       'name' => 'Hero',
@@ -115,6 +137,47 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("Hero"),
+    ));
+      /* block for our product suggestion FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'productSuggestion',
+      'title' => __('productSuggestionBlock'),
+      'description' => __('A custom block for our product suggestion on the Front Page.'),
+      'render_template' => 'template-parts/blocks/product-suggestion.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("productSuggestion"),
+    )); 
+    /* block for our SHOPS */
+    acf_register_block_type(array(
+      'name' => 'our-shops',
+      'title' => __('our-shops'),
+      'description' => __('A custom block for our shops.'),
+      'render_template' => 'template-parts/blocks/our-shops.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("our-shops"),
+    ));
+    /* block for our header NEWS PAGE */
+    acf_register_block_type(array(
+      'name' => 'NewsHeader',
+      'title' => __('NewsHeader'),
+      'description' => __('A custom block for our news header.'),
+      'render_template' => 'template-parts/blocks/news-header.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("NewsHeader"),
+    ));
+
+    /* block for our header NEWS PAGE */
+    acf_register_block_type(array(
+      'name' => 'newsPosts',
+      'title' => __('newsPosts'),
+      'description' => __('A custom block for our news posts.'),
+      'render_template' => 'template-parts/blocks/news-posts.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("NewsPosts"),
     ));
   }
 }

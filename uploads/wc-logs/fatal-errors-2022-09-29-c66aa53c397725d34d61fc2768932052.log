@@ -1,0 +1,328 @@
+<<<<<<< HEAD
+2022-09-29T09:04:17+00:00 CRITICAL syntax error, unexpected 'acf_register_block_type' (T_STRING) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 126
+
+2022-09-29T09:04:18+00:00 CRITICAL syntax error, unexpected 'acf_register_block_type' (T_STRING) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 126
+
+2022-09-29T09:04:20+00:00 CRITICAL syntax error, unexpected 'acf_register_block_type' (T_STRING) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 126
+
+2022-09-29T09:04:25+00:00 CRITICAL syntax error, unexpected 'acf_register_block_type' (T_STRING) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 126
+
+2022-09-29T11:05:10+00:00 CRITICAL Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php:93
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php(147): ACF_Data->_key('local')
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\acf-helper-functions.php(186): ACF_Data->get('local')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(53): acf_is_filter_enabled('local')
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(70): acf_is_local_enabled()
+#4 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(448): acf_get_local_store('fields')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(528): acf_is_local_field_key('header')
+#6 C: in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php on line 93
+
+2022-09-29T11:05:18+00:00 CRITICAL Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php:93
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php(147): ACF_Data->_key('local')
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\acf-helper-functions.php(186): ACF_Data->get('local')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(53): acf_is_filter_enabled('local')
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(70): acf_is_local_enabled()
+#4 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(448): acf_get_local_store('fields')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\local-fields.php(528): acf_is_local_field_key('header')
+#6 C: in C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\includes\class-acf-data.php on line 93
+
+2022-09-29T11:05:39+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:29
+2022-09-29T09:52:12+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:32
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+<<<<<<< HEAD
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', A in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 29
+
+2022-09-29T11:08:11+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:30
+=======
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/he in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 32
+
+2022-09-29T09:52:18+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:31
+>>>>>>> 13
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+<<<<<<< HEAD
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', A in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 30
+
+2022-09-29T11:13:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_category_link(), 0 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31 and exactly 1 expected in C:\wamp64\www\wcdota\wp-includes\category-template.php:20
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php(31): get_category_link()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+ in C:\wamp64\www\wcdota\wp-includes\category-template.php on line 20
+
+2022-09-29T11:14:37+00:00 CRITICAL Uncaught Error: Call to undefined function the_category_link() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php:31
+=======
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/he in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 31
+
+2022-09-29T09:52:42+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:32
+>>>>>>> 13
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+<<<<<<< HEAD
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/our...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/our...', in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31
+
+2022-09-29T11:16:13+00:00 CRITICAL syntax error, unexpected '?>', expecting variable (T_VARIABLE) or '{' or '$' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\category-start-block.php on line 31
+=======
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/her. in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 32
+
+2022-09-29T09:54:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::regular_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php:31
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', false, 97, Object(WP_Block))
+#2 C:\wamp64\www\wcdota\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(307): acf_rendered_block(Array, '', false, 97, Object(WP_Block))
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 C:\wamp64\www\wcdota\wp-includes\blocks.php(902): WP_Block->render()
+#5 C:\wamp64\www\wcdota\wp-includes\blocks.php(940): render_block(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): do_blocks('<!-- wp:acf/her...')
+#7 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<!-- wp in C:\wamp64\www\wcdota\wp-content\themes\wcdota\template-parts\blocks\product-suggestion.php on line 31
+>>>>>>> 13
+=======
+2022-09-29T09:31:08+00:00 CRITICAL Uncaught Error: Call to a member function get_the_category() on null in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:37
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307):  in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 37
+
+2022-09-29T09:31:18+00:00 CRITICAL Uncaught Error: Call to a member function get_the_category() on null in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:37
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307):  in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 37
+
+2022-09-29T09:32:14+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_category() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:37
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook. in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 37
+
+2022-09-29T09:34:32+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_category() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:37
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook. in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 37
+
+2022-09-29T09:34:38+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_category() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:37
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook. in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 37
+
+2022-09-29T09:39:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function _n(), 2 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 80 and at least 3 expected in C:\wamp64\www\wcdota\wp-includes\l10n.php:473
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php(80): _n('Categories:', 'woocommerce')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): bbloomer_cart_item_category('<a href="http:/...', Array, 'c51ce410c124a10...')
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<a href="http:/...', Array)
+#3 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(43): apply_filters('woocommerce_car...', '<a href="http:/...', Array, 'c51ce410c124a10...')
+#4 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#6 C:\wamp64 in C:\wamp64\www\wcdota\wp-includes\l10n.php on line 473
+
+2022-09-29T09:40:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function _n(), 2 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 80 and at least 3 expected in C:\wamp64\www\wcdota\wp-includes\l10n.php:473
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php(80): _n('Categories:', 'woocommerce')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): bbloomer_cart_item_category('<a href="http:/...', Array, 'c51ce410c124a10...')
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<a href="http:/...', Array)
+#3 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(43): apply_filters('woocommerce_car...', '<a href="http:/...', Array, 'c51ce410c124a10...')
+#4 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#6 C:\wamp64 in C:\wamp64\www\wcdota\wp-includes\l10n.php on line 473
+
+2022-09-29T09:43:27+00:00 CRITICAL syntax error, unexpected ''</span>'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 80
+
+2022-09-29T09:45:06+00:00 CRITICAL syntax error, unexpected '$cat_ids' (T_VARIABLE), expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 80
+
+2022-09-29T09:48:38+00:00 CRITICAL Uncaught Error: Call to a member function get_category_ids() on null in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:36
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307):  in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 36
+
+2022-09-29T11:26:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function _n(), 2 passed in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 80 and at least 3 expected in C:\wamp64\www\wcdota\wp-includes\l10n.php:473
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php(80): _n('Categories:', 'woocommerce')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): bbloomer_cart_item_category('<a href="http:/...', Array, 'c51ce410c124a10...')
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(191): WP_Hook->apply_filters('<a href="http:/...', Array)
+#3 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(42): apply_filters('woocommerce_car...', '<a href="http:/...', Array, 'c51ce410c124a10...')
+#4 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#6 C:\wamp64 in C:\wamp64\www\wcdota\wp-includes\l10n.php on line 473
+
+2022-09-29T11:28:53+00:00 CRITICAL syntax error, unexpected 'acf' (T_STRING), expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 87
+
+2022-09-29T12:27:02+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 180
+
+2022-09-29T12:27:30+00:00 CRITICAL Uncaught Error: Call to undefined function wp_clear_notices() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:174
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): add_shipping_banner('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(4): do_action('woocommerce_bef...')
+#4 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wr in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 174
+
+2022-09-29T12:31:23+00:00 CRITICAL syntax error, unexpected 'wc_print_notice' (T_STRING), expecting ':' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 181
+
+2022-09-29T12:33:24+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 183
+
+2022-09-29T13:08:39+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variation::parent_id() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:39
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php( in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 39
+
+2022-09-29T13:12:48+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variation as array in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php:44
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(356): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 C:\wamp64\www\wcdota\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307 in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 44
+
+2022-09-29T13:15:07+00:00 CRITICAL syntax error, unexpected '31' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php on line 39
+
+2022-09-29T13:25:12+00:00 CRITICAL Uncaught Error: Call to undefined function wc_cart_totals_order_tax_html() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_ge in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T13:25:24+00:00 CRITICAL Uncaught Error: Call to undefined function wc_cart_tax_order_totals_html() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_ge in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T13:25:28+00:00 CRITICAL Uncaught Error: Call to undefined function wc_cart_tax_order_total_html() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T13:41:01+00:00 CRITICAL Uncaught Error: Call to undefined function calculate_fee_totals() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_templat in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T13:41:43+00:00 CRITICAL Uncaught Error: Call to undefined function combine_item_taxes() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template( in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T13:42:48+00:00 CRITICAL Uncaught Error: Call to undefined function combine_item_taxes() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template( in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T14:00:54+00:00 CRITICAL Uncaught Error: Object of class WC_Cart could not be converted to string in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php:84
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2135): wc_get_template('cart/cart-total...')
+#2 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): woocommerce_cart_totals('')
+#3 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart.php(158): do_action('woocommerce_car...')
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_ in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+
+2022-09-29T14:05:34+00:00 CRITICAL syntax error, unexpected '.', expecting end of file in C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce\cart\cart-totals.php on line 84
+>>>>>>> 23
+
