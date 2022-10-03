@@ -13,11 +13,17 @@ Version: 1.0
 /* HERO */
 @import "./css/hero.css";
 
+/* HERO IMAGE */
+@import "./css/hero.css";
+
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
 @import "./css/front-page/random-products.css";
 @import "./css/front-page/categories.css";
 @import "./css/front-page/product-suggestion.css";
+
+/* STORES PAGE */
+@import "./css/stores-page/our-stores.css";
 
 * {
   margin: 0;

@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/inc/custom-post-types.php";
+
 add_action('after_setup_theme', 'woocommerce_support');
 function woocommerce_support()
 {
@@ -144,6 +146,16 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("productSuggestion"),
+    )); 
+    /* block for our SHOPS */
+    acf_register_block_type(array(
+      'name' => 'our-shops',
+      'title' => __('our-shops'),
+      'description' => __('A custom block for our shops.'),
+      'render_template' => 'template-parts/blocks/our-shops.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("our-shops"),
     ));
   }
 }
