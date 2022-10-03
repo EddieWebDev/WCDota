@@ -157,5 +157,26 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("our-shops"),
     ));
+    /* block for our header NEWS PAGE */
+    acf_register_block_type(array(
+      'name' => 'NewsHeader',
+      'title' => __('NewsHeader'),
+      'description' => __('A custom block for our news header.'),
+      'render_template' => 'template-parts/blocks/news-header.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("NewsHeader"),
+    ));
+
+    /* block for our header NEWS PAGE */
+    acf_register_block_type(array(
+      'name' => 'newsPosts',
+      'title' => __('newsPosts'),
+      'description' => __('A custom block for our news posts.'),
+      'render_template' => 'template-parts/blocks/news-posts.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("NewsPosts"),
+    ));
   }
 }
