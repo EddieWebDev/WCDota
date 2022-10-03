@@ -1,7 +1,29 @@
 {
     "key": "group_633aa962348c9",
     "title": "News Posts",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_633aab0eb778b",
+            "label": "number of posts",
+            "name": "number_of_posts",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +41,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664788845
+    "modified": 1664789285
 }

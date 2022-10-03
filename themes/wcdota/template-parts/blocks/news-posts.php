@@ -2,9 +2,11 @@
     <!-- looping through custom post type POSTS -->
     <div class="news-array">
         <?php
+        $posts = get_field("number_of_posts");
+
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 6
+            'posts_per_page' => $posts
         );
         $the_query = new WP_Query($args); ?>
 

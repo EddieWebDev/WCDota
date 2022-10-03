@@ -16,6 +16,7 @@ Version: 1.0
 
 /* NEWS PAGE */
 @import "./css/news-page/header.css";
+@import "./css/news-page/news-posts.css";
 
 * {
   margin: 0;
