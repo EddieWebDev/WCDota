@@ -107,5 +107,16 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("categoryStartBlock"),
     ));
+
+    /* block for our Hero FRONT PAGE */
+    acf_register_block_type(array(
+      'name' => 'Hero',
+      'title' => __('Hero'),
+      'description' => __('A custom block for our hero image.'),
+      'render_template' => 'template-parts/blocks/hero-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("Hero"),
+    ));
   }
 }
