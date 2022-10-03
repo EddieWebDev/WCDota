@@ -8,8 +8,14 @@ Version: 1.0
 @import "./css/font.css";
 /* HEADER + FOOTER */
 
+/* HERO IMAGE */
+@import "./css/hero.css";
+
 /* FRONT PAGE */
 @import "./css/front-page/our-vision.css";
+
+/* STORES PAGE */
+@import "./css/stores-page/our-stores.css";
 
 * {
   margin: 0;
