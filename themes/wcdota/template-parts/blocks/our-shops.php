@@ -5,9 +5,11 @@
         <!-- looping through custom post type shop -->
         <div class="shops-array">
             <?php
+            $shops = get_field("number_of_shops");
+
             $args = array(
                 'post_type' => 'shop',
-                'posts_per_page' => 9
+                'posts_per_page' => $shops
             );
             $the_query = new WP_Query($args); ?>
 
