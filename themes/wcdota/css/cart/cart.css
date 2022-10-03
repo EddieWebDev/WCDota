@@ -51,6 +51,14 @@
   font-size: 1.1rem;
 }
 
+
+/* REMOVING INPUT UP AND DOWN ARROW */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .product-remove a.remove {
   color: #353434 !important;
   font-size: 1.25em;
