@@ -47,11 +47,6 @@
                 "param": "block",
                 "operator": "==",
                 "value": "acf\/newsheader"
-            },
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "210"
             }
         ]
     ],
@@ -63,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664546354
+    "modified": 1664799846
 }
