@@ -73,7 +73,24 @@ function special_nav_class($classes, $item)
   return $classes;
 }
 
-// DROP DOWN MENU ----------------------------------------------------------
+// WOOCOMMERCE HOOKS ----------------------------------------------------------
+
+// add_action("woocommerce_before_shop_loop", "intro_div", 5);
+
+// function intro_div() {
+
+// if( ! is_product() ) {
+//   return;
+// }
+
+//   echo "<div class='intro-div'>DET FUNGERAR</div>";
+// }
+
+
+
+
+
+
 
 
 // CUSTOM ACF BLOCKS ------------------------------------------------------

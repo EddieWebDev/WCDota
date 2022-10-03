@@ -70,3 +70,9 @@ Version: 1.0
   display: flex;
   flex-direction: column;
 }
+
+.intro-div {
+  background-color: red;
+  border: solid blue 2px;
+  height: 100px;
+}
