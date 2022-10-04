@@ -129,11 +129,179 @@ function ci_theme_override_woocommerce_image_size_thumbnail( $size ) {
 }
 
 
+// WOOCOMMERCE HOOKS SINGLE PRODUCT----------------------------------------------------------
+add_action("woocommerce_before_single_product", "single_product_header_div", 5);
 
+function single_product_header_div() {
+  if( ! is_product() ) {
+       return;
+     }
+     echo "<div class='single-product-header-div'>";
+     echo "</div>";
+
+}
+
+ add_action("woocommerce_before_single_product_summary", "intro_page_dir", 5);
+
+ function intro_page_dir() {
+
+ if( ! is_product() ) {
+   return;
+ }
+ echo "<div class='intro-page-dir'>";
+ global $post;
+ $terms = get_the_terms( $post->ID, 'product_cat' );
+ foreach ($terms as $term) {
+    echo $term->name .' / ';
+    echo the_title();
+ }
+ echo "</div>";
+ }
+
+ add_action("woocommerce_single_product_summary", "cat_name", 5);
+
+ function cat_name() {
+
+ if( ! is_product() ) {
+   return;
+ }
+ echo "<div class='cat-name'>";
+ global $post;
+ $terms = get_the_terms( $post->ID, 'product_cat' );
+ foreach ($terms as $term) {
+    echo $term->name .' ';
+ }
+ echo "</div>";
+ }
+
+// REMOVE SKU ---------------------------
+
+function sv_remove_product_page_skus( $enabled ) {
+  if ( ! is_admin() && is_product() ) {
+      return false;
+  }
+
+  return $enabled;
+}
+add_filter( 'wc_product_sku_enabled', 'sv_remove_product_page_skus' );
+
+// REMOVE PRODUCT SUMMARY -----------------------------------
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+
+// REMOVE INFO TAB ----------------------------------
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+  
+  unset( $tabs['additional_information'] );  	// Remove the additional information tab
+  
+  return $tabs;
+}
+
+// REMOVE RELATED PRODUCTS ---------------------
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+
+// REMOVE SALE BADGE ------------------
+
+add_filter('woocommerce_sale_flash', 'lw_hide_sale_flash');
+function lw_hide_sale_flash()
+{
+return false;
+}
+
+// AFTER SINGLE PRODUCT ------------
+
+add_action("woocommerce_after_single_product", "after_single_product", 5);
+
+function after_single_product() {
+?>
+<div class="suggested-products-wrapper">
+<div class="suggested-intro">
+  <h2>You may also like</h2>
+  <p>Lorem Ipsum</p>
+</div>
+
+<?php
+  global $post; // setup_postdata will not work without this being set (outside of the foreach loop)
+
+        $args = array(
+            'posts_per_page'   => 2,
+            'orderby'          => 'rand',
+            'post_type'        => 'product' ); 
+
+        $random_products = get_posts( $args );
+?>
+<div class="suggested-products">
+<?php
+        foreach ( $random_products as $post ) : setup_postdata( $post ); ?>
+        <div class="suggested-product">
+        <a class="suggested-random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">
+          <?php the_post_thumbnail(); ?>
+        </a>
+        <h2>
+          <?php the_title(); ?>
+        </h2>  
+          <?php the_excerpt(); ?>
+          <?php 
+          $price = get_post_meta( $post->ID, '_price', true );
+          echo $price . " kr";
+          ?>
+
+        </div>
+        <?php endforeach; 
+        
+        wp_reset_postdata();
+?>
+</div>
+</div>
+
+<?php
+
+global $post; // setup_postdata will not work without this being set (outside of the foreach loop)
+
+        $args = array(
+            'posts_per_page'   => 1,
+            'orderby'          => 'rand',
+            'post_type'        => 'product' ); 
+
+        $random_products = get_posts( $args );
+
+        foreach ( $random_products as $post ) : setup_postdata( $post ); ?>
+        <div class="random-product">
+            <div class="random-product-text">
+                <div class="random-product-title-small">
+                    <h2></h2><?php the_title(); ?>
+                </div>
+                <div class="random-product-title">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+                <div class="random-product-excerpt">
+                    <?php the_excerpt(); ?>
+                </div>
+                <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
+            </div>
+
+            <div class="random-product-thumbnail">
+                <?php the_post_thumbnail(); ?>
+            </div>
+                </div>
+        <?php endforeach; 
+        
+        wp_reset_postdata();
+
+?>
+
+<?php
+}
 
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 
+
 add_action('acf/init', 'my_acf_init_block_types');
+
 
 function my_acf_init_block_types()
 {

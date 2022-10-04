@@ -12,3 +12,71 @@
 
 2022-10-03T12:32:23+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 169
 
+2022-10-03T17:32:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_description() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:87
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): intro_div('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\templates\content-single-product.php(27): do_action('woocommerce_bef...')
+#4 C:\wamp64\www\wcdota\wp-includes\template.php(772): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\wamp64\\www\\w...', false)
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(971): wc_get_template_part('content', 'single-product')
+#7 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce.php(3): woocommerce_content()
+#8 C:\wamp64\www\wcdota\wp-includes\templ in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 87
+
+2022-10-03T17:41:37+00:00 CRITICAL Cannot redeclare intro_div() (previously declared in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:79) in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 99
+
+2022-10-03T18:20:02+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\variable.php on line 52
+
+2022-10-03T19:12:15+00:00 CRITICAL syntax error, unexpected '<' in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 173
+
+2022-10-03T19:33:57+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:197
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): after_single_product('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\templates\content-single-product.php(76): do_action('woocommerce_aft...')
+#4 C:\wamp64\www\wcdota\wp-includes\template.php(772): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\wamp64\\www\\w...', false)
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(971): wc_get_template_part('content', 'single-product')
+#7 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce.php(3): woocommerce_content()
+#8 C:\wamp64\www\wcdota\wp-includes in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 197
+
+2022-10-03T19:34:20+00:00 CRITICAL Uncaught Error: Call to undefined function the_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:197
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): after_single_product('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\templates\content-single-product.php(76): do_action('woocommerce_aft...')
+#4 C:\wamp64\www\wcdota\wp-includes\template.php(772): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\wamp64\\www\\w...', false)
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(971): wc_get_template_part('content', 'single-product')
+#7 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce.php(3): woocommerce_content()
+#8 C:\wamp64\www\wcdota\wp-includes\tem in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 197
+
+2022-10-03T19:35:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:197
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): after_single_product('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\templates\content-single-product.php(76): do_action('woocommerce_aft...')
+#4 C:\wamp64\www\wcdota\wp-includes\template.php(772): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\wamp64\\www\\w...', false)
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(971): wc_get_template_part('content', 'single-product')
+#7 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce.php(3): woocommerce_content()
+#8 C:\wamp64\www\wcdota\wp-includes in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 197
+
+2022-10-03T19:35:20+00:00 CRITICAL Uncaught Error: Call to undefined function the_price() in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php:197
+Stack trace:
+#0 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(307): after_single_product('')
+#1 C:\wamp64\www\wcdota\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\wcdota\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\templates\content-single-product.php(76): do_action('woocommerce_aft...')
+#4 C:\wamp64\www\wcdota\wp-includes\template.php(772): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\wamp64\\www\\w...', false)
+#6 C:\wamp64\www\wcdota\wp-content\plugins\woocommerce\includes\wc-template-functions.php(971): wc_get_template_part('content', 'single-product')
+#7 C:\wamp64\www\wcdota\wp-content\themes\wcdota\woocommerce.php(3): woocommerce_content()
+#8 C:\wamp64\www\wcdota\wp-includes\tem in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 197
+
+2022-10-03T20:08:22+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in C:\wamp64\www\wcdota\wp-content\themes\wcdota\functions.php on line 123
+
