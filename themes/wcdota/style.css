@@ -25,9 +25,10 @@ Version: 1.0
 /* STORES PAGE */
 @import "./css/stores-page/our-stores.css";
 
-/* NEWS PAGE */
+/* NEWS PAGES */
 @import "./css/news-page/header.css";
 @import "./css/news-page/news-posts.css";
+@import "./css/single-news/single-news.css";
 
 /*  CART PAGE */
 @import "./css/cart/cart.css";
@@ -39,7 +40,6 @@ Version: 1.0
   text-decoration: none;
   list-style: none;
 }
-
 
 /* WRAPPERS */
 
