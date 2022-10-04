@@ -1,0 +1,31 @@
+.about-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header {
+  margin-top: 3rem;
+}
+
+.about-img {
+  margin: 3rem;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(192, 187, 187);
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  mix-blend-mode: multiply;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  line-height: 1.2em;
+}
