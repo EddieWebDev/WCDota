@@ -1,6 +1,19 @@
 <?php get_header(); ?>
 
-<?php get_search_form(); ?>
+<header class="header">
+</header>
 
-<?php get_footer(); ?>
+<div>
+    search.php
+    <?php get_search_form(); ?>
+</div>
 
+<?php if (have_posts()) :
+    while (have_posts()) : the_post();
+    // Your loop code
+    endwhile;
+else :
+    _e('Inga resultat hittades.', 'textdomain');
+endif; ?>
+
+<?php get_footer();

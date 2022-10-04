@@ -1,6 +1,10 @@
-<?php /* Template Name: Search Template */ ?>
 <?php get_header(); ?>
 
-<?php get_search_form(); ?>
+<header class="header">
+</header>
+<div>
+    <p>Vad letar du efter?</p>
+    <?php get_search_form(); ?>
+</div>
 
 <?php get_footer(); ?>
