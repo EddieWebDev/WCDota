@@ -29,11 +29,22 @@ add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
 
 // EXCERPT LENGTH SUPPORT ---------------------------------------------
 
-function new_excerpt_length($length)
-{
-  return 25;
-}
-add_filter('excerpt_length', 'new_excerpt_length');
+// function new_excerpt_length($length)
+// {
+//   return 25;
+// }
+// add_filter('excerpt_length', 'new_excerpt_length');
+
+
+// add_filter('woocommerce_short_description', 'limit_woocommerce_short_description', 10, 1);
+//     function limit_woocommerce_short_description($post_excerpt){
+//         if (!is_product()) {
+//             $pieces = explode(" ", $post_excerpt);
+//             $post_excerpt = implode(" ", array_splice($pieces, 0, 10));
+
+//         }
+//         return $post_excerpt;
+//     }
 
 // MENU SUPPORT -------------------------------------------------------
 
@@ -421,6 +432,16 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("contactText"),
+    ));
+    /* block for two random categories */
+    acf_register_block_type(array(
+      'name' => 'twoRandomCategories',
+      'title' => __('twoRandomCategories'),
+      'description' => __('A custom block for two random categories.'),
+      'render_template' => 'template-parts/blocks/category-two-random-block.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("twoRandomCategories"),
     ));
   }
 }
