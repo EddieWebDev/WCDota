@@ -9,7 +9,7 @@
         </defs>
     </svg>
 </div>
-<section class="single-post">
+<section class="single-post-news">
     <div class="single-date">
         <p>
             <?php the_time(get_option('date_format')); ?>
