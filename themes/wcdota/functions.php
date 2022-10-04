@@ -55,11 +55,12 @@ function register_my_menus()
 
 add_theme_support('post-thumbnails');
 
-function wpdocs_setup_theme() {
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 350, 350 );
+function wpdocs_setup_theme()
+{
+  add_theme_support('post-thumbnails');
+  set_post_thumbnail_size(350, 350);
 }
-add_action( 'after_setup_theme', 'wpdocs_setup_theme' );
+add_action('after_setup_theme', 'wpdocs_setup_theme');
 
 // NAV CLASS ----------------------------------------------------------
 
@@ -192,7 +193,7 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("Hero"),
     ));
-      /* block for our product suggestion FRONT PAGE */
+    /* block for our product suggestion FRONT PAGE */
     acf_register_block_type(array(
       'name' => 'productSuggestion',
       'title' => __('productSuggestionBlock'),
@@ -201,7 +202,7 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("productSuggestion"),
-    )); 
+    ));
     /* block for our SHOPS */
     acf_register_block_type(array(
       'name' => 'our-shops',
@@ -232,6 +233,16 @@ function my_acf_init_block_types()
       'category' => 'formatting',
       'icon' => 'admin-comments',
       'keywords' => array("NewsPosts"),
+    ));
+    /* block for our ABOUT PAGE */
+    acf_register_block_type(array(
+      'name' => 'aboutPage',
+      'title' => __('aboutPage'),
+      'description' => __('A custom block for our about posts.'),
+      'render_template' => 'template-parts/blocks/about-page.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("aboutPage"),
     ));
   }
 }
