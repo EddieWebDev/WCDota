@@ -3,5 +3,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.single-date {
   margin-top: 4rem;
+}
+
+.single-title {
+  font-size: 2em;
+}
+
+.single-img {
+  margin: 3rem;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(192, 187, 187);
+  display: flex;
+  justify-content: center;
+}
+
+.single-img img {
+  mix-blend-mode: multiply;
+}
+
+.single-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }

@@ -11,14 +11,14 @@
 </div>
 <section class="single-post">
     <div class="single-date">
-        <strong>
+        <p>
             <?php the_time(get_option('date_format')); ?>
-        </strong>
+        </p>
     </div>
     <div class="single-title">
-        <h3>
+        <h2>
             <?php the_title(); ?>
-        </h3>
+        </h2>
     </div>
     <div class="single-img">
         <?php the_post_thumbnail("medium"); ?>
