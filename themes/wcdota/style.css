@@ -32,6 +32,9 @@ Version: 1.0
 /*  CART PAGE */
 @import "./css/cart/cart.css";
 
+/* ABOUT PAGE */
+@import "./css/about-page/about-block.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +42,6 @@ Version: 1.0
   text-decoration: none;
   list-style: none;
 }
-
 
 /* WRAPPERS */
 
