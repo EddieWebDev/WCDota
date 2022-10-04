@@ -73,7 +73,7 @@ function special_nav_class($classes, $item)
   return $classes;
 }
 
-// WOOCOMMERCE HOOKS ----------------------------------------------------------
+// WOOCOMMERCE HOOKS SINGLE PRODUCT----------------------------------------------------------
 add_action("woocommerce_before_single_product", "single_product_header_div", 5);
 
 function single_product_header_div() {
@@ -84,26 +84,6 @@ function single_product_header_div() {
      echo "</div>";
 
 }
-
-// add_action("woocommerce_before_single_product", "intro_div", 5);
-
-// function intro_div() {
-
-// if( ! is_product() ) {
-//   return;
-// }
-
-//   echo "<div class='intro-div'>";
-    
-//     echo "<h2 class='intro-h2'>";
-//       echo the_title();
-//     echo "</h2>";
-
-//     echo "<div class='intro-excerpt'>";
-//       echo the_excerpt();
-//     echo "</div>";
-//   echo "</div>";
-// }
 
  add_action("woocommerce_before_single_product_summary", "intro_page_dir", 5);
 
