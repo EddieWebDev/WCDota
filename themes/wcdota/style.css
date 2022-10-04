@@ -31,6 +31,8 @@ Version: 1.0
 
 /*  CART PAGE */
 @import "./css/cart/cart.css";
+/*  SINGLE CATEGORY */
+@import "./css/single-category/single-category.css";
 
 * {
   margin: 0;

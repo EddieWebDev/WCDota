@@ -1,0 +1,81 @@
+.single-cat-intro {
+    min-height: 400px;
+    background-color: #617C7C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-cat-intro h2 {
+    font-size: 3rem;
+    color: black;
+}
+
+.tax-product_cat #wrapper #header h1 {
+    color: black;
+}
+.tax-product_cat #wrapper #header a {
+    color: black;
+}
+.tax-product_cat #wrapper #header #header-nav .header-search-cart svg path {
+    fill: black;
+}
+
+.single-cat-intro-description {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 3rem;
+    color: black;
+}
+
+.page-title {
+    display: none;
+}
+
+.term-description {
+    display: none;
+}
+.woocommerce-result-count {
+    display: none;
+}
+
+.tax-product_cat #wrapper #container #main .woocommerce-ordering {
+    padding-left: 10rem;
+}
+.tax-product_cat #wrapper #container #main .products {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tax-product_cat #wrapper #container #main .products .product {
+    margin: 3rem;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tax-product_cat #wrapper #container #main .products .product h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.tax-product_cat #wrapper #container #main .products .product span{
+    margin-top: 2rem;
+}
+
+.tax-product_cat #wrapper #container #main .products .product a img{
+    object-fit: contain;
+    max-height: 350px;
+}
+
+.tax-product_cat #wrapper #container #main .products .product a {
+    color: black;
+}
+
+.cat-title-before-shop {
+    padding-left: 8rem;
+    margin: 2rem;
+}
