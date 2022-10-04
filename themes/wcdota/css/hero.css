@@ -1,9 +1,16 @@
 .hero-div {
   width: 100%;
-  max-height: 800px;  
+  max-height: 800px;
 }
 
 .hero-div img {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  object-fit: cover;
+}
+
+.hero-div svg {
   width: 100%;
   height: auto;
   max-height: 800px;
