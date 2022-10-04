@@ -35,6 +35,9 @@ Version: 1.0
 /*  SINGLE CATEGORY */
 @import "./css/single-category/single-category.css";
 
+/* SEARCH */
+@import "./css/search/search.css";
+
 * {
   margin: 0;
   padding: 0;
