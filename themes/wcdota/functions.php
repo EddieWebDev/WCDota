@@ -244,5 +244,15 @@ function my_acf_init_block_types()
       'icon' => 'admin-comments',
       'keywords' => array("aboutPage"),
     ));
+    /* block for our Contact page */
+    acf_register_block_type(array(
+      'name' => 'contactText',
+      'title' => __('contactText'),
+      'description' => __('A custom block for our news posts.'),
+      'render_template' => 'template-parts/blocks/contact-text.php',
+      'category' => 'formatting',
+      'icon' => 'admin-comments',
+      'keywords' => array("contactText"),
+    ));
   }
 }

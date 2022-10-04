@@ -41,6 +41,10 @@ Version: 1.0
 /* ABOUT PAGE */
 @import "./css/about-page/about-block.css";
 
+/* CONTACT PAGE */
+@import "./css/contact-page/contact-form.css";
+@import "./css/contact-page/contact-text.css";
+
 * {
   margin: 0;
   padding: 0;

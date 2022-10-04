@@ -1,0 +1,19 @@
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
+  margin-top: 3rem;
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  line-height: 1.2em;
+  margin-top: 3rem;
+}
