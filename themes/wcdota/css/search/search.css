@@ -1,0 +1,48 @@
+.search-div {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.search-header {
+  margin: 0 auto 3rem auto;
+  font-size: 2em;
+}
+
+.search-div span {
+  font-size: 0.9em;
+}
+
+/* Getting button in the center */
+form.searchform div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+form.searchform div input#s {
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+form.searchform div input#searchsubmit {
+  background-color: #617c7c;
+  color: white;
+  margin: 0 auto;
+  padding: 0.5rem 3rem;
+}
+
+.search-post {
+  border-bottom: 1px solid #617c7c80;
+  margin: 2rem;
+}
+
+.search-link {
+  color: #617c7c;
+}

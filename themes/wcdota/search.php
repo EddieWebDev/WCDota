@@ -3,20 +3,26 @@
 <header class="header">
 </header>
 
-<div>
-    search.php
+<div class="search-div">
+    <h2 class="search-header">Sök</h2>
+    <span>Vad letar du efter?</span>
     <?php get_search_form(); ?>
 </div>
 
-<?php if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : ?>
+    <p>Resultat</p>
+    <?php while (have_posts()) : the_post(); ?>
 
         <div class="search-post">
-            <h1><?php the_title(); ?></h1>
-            <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('full'); ?>
+            <h3>
+                <?php the_title(); ?>
+            </h3>
+            <p>
+                <?php the_excerpt(); ?>
+            </p>
+            <a class="search-link" href="<?php the_permalink(); ?>">
+                VIEW COLLECTION
             </a>
-            <p><?php the_excerpt(); ?></p>
         </div>
 <?php endwhile;
 else :
