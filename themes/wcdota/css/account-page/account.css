@@ -1,10 +1,7 @@
 .account-header {
   min-height: 250px;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 }
 
@@ -20,6 +17,18 @@
   fill: black;
 }
 
-.my-page {
-  margin-top: 10rem;
+/*  my account content covers entire page */
+div.woocommerce .woocommerce-MyAccount-content {
+  float: none;
+  width: 100%;
+}
+
+.my-account-page {
+  margin: 6rem auto 0 auto;
+  border: 1px solid blue;
+  width: 100%;
+  max-width: 600px;
+}
+
+.account-title {
 }
