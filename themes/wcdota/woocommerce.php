@@ -1,5 +1,3 @@
-WOOCOMMERCE.PHP
-
 <?php get_header(); ?>
 
     <?php if(is_product_taxonomy()):?>
