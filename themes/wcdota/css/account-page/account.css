@@ -41,6 +41,7 @@ div.woocommerce .woocommerce-MyAccount-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .account-orders h2 {
@@ -50,4 +51,29 @@ div.woocommerce .woocommerce-MyAccount-content {
 
 .account-orders table.shop_table {
   border: 1px solid gray;
+}
+
+.account-orders table.shop_table a {
+  color: #617c7c;
+}
+
+.account-addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.account-addresses > h2 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+.account-addresses .woocommerce-Addresses {
+  font-size: 0.85em;
+}
+
+.account-addresses .woocommerce-Addresses .title a.edit {
+  color: #617c7c;
+  float: none;
 }
