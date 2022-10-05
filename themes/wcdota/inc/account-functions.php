@@ -10,7 +10,7 @@ function woocommerce_orders()
         ob_start();
         wc_get_template('myaccount/my-orders.php', array(
             'current_user'  => get_user_by('id', $user_id),
-            'order_count'   => $order_count
+            /* 'order_count'   => $order_count */
         ));
         return ob_get_clean();
     }
