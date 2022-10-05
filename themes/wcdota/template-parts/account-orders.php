@@ -1,4 +1,4 @@
-<div>
+<div class="account-orders">
     <!-- REMOVING 'numberposts' => $order_count, on line 23 -->
 
     <?php
