@@ -223,7 +223,7 @@ function lw_hide_sale_flash()
 return false;
 }
 
-// AFTER SINGLE PRODUCT ------------
+// AFTER SINGLE PRODUCT --------------
 
 add_action("woocommerce_after_single_product", "after_single_product", 5);
 
@@ -307,6 +307,17 @@ global $post; // setup_postdata will not work without this being set (outside of
 
 <?php
 }
+
+
+
+// CHECKOUT HOOKS ------------------------------------------------------
+
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+
+// add_action( "woocommerce_review_order_before_cart_contents", "your_order");
+// function your_order() {
+//   echo "<h3> Your order </h3>";
+// }
 
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 

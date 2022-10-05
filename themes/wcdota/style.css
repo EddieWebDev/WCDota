@@ -48,6 +48,9 @@ Version: 1.0
 /*  SINGLE PRODUCT PAGE */
 @import "./css/single-product/single-product.css";
 
+/*  CHECKOUT PAGE */
+@import "./css/checkout/checkout.css";
+
 
 
 * {
