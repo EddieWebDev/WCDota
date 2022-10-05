@@ -2,6 +2,23 @@
   margin: 0 5rem;
 }
 
+.cart-header {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce-cart #wrapper #header h1 {
+  color: black;
+}
+.woocommerce-cart #wrapper #header a {
+  color: black;
+}
+.woocommerce-cart #wrapper #header #header-nav .header-search-cart svg path {
+  fill: black;
+}
+
 .woocommerce table.shop_table {
   border: none;
 }

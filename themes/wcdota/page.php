@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<?php if(is_cart()):?>
+        <?php get_template_part("/template-parts/cart-before-content"); ?>
+    <?php endif ;?>
+
 <?php if(is_checkout()):?>
         <?php get_template_part("/template-parts/checkout-before-content"); ?>
 <?php endif ;?>
