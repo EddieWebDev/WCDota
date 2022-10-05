@@ -1,3 +1,25 @@
+.account-header {
+  min-height: 250px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.woocommerce-account #wrapper #header h1 {
+  color: black;
+}
+
+.woocommerce-account #wrapper #header a {
+  color: black;
+}
+
+.woocommerce-account #wrapper #header #header-nav .header-search-cart svg path {
+  fill: black;
+}
+
 .my-page {
   margin-top: 10rem;
 }
