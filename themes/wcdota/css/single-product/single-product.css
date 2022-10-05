@@ -44,10 +44,10 @@
     flex-direction: column;
 }
 
-.cart {
+/* .cart {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .single_add_to_cart_button {
     max-width: 30%;
