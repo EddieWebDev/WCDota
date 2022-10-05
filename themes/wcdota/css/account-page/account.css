@@ -25,7 +25,6 @@ div.woocommerce .woocommerce-MyAccount-content {
 
 .my-account-page {
   margin: 6rem auto 0 auto;
-  border: 1px solid blue;
   width: 100%;
   max-width: 600px;
   display: flex;
@@ -76,4 +75,26 @@ div.woocommerce .woocommerce-MyAccount-content {
 .account-addresses .woocommerce-Addresses .title a.edit {
   color: #617c7c;
   float: none;
+}
+
+.account-edit-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.account-edit-account > h2 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+.account-edit-account .woocommerce-EditAccountForm input {
+  border: 1px solid gray;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.account-edit-account .woocommerce-EditAccountForm button.woocommerce-Button {
+  margin-top: 1rem;
 }
