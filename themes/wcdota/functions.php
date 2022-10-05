@@ -78,54 +78,58 @@ function special_nav_class($classes, $item)
 
 add_action('woocommerce_archive_description', 'your_function_name');
 
-function your_function_name() {
+function your_function_name()
+{
 
-if ( is_product_category('product-category-name') ) {
+  if (is_product_category('product-category-name')) {
 
-echo'<p class="books-info">Add Your Text Here</p>';
-    }
+    echo '<p class="books-info">Add Your Text Here</p>';
+  }
 }
 
-add_action( 'woocommerce_after_shop_loop_item_title', 'woo_show_excerpt_shop_page', 5 );
-function woo_show_excerpt_shop_page() {
-	echo get_the_excerpt();
+add_action('woocommerce_after_shop_loop_item_title', 'woo_show_excerpt_shop_page', 5);
+function woo_show_excerpt_shop_page()
+{
+  echo get_the_excerpt();
 }
 
-add_action( 'woocommerce_before_shop_loop', 'woo_show_title_shop_page', 5 );
-function woo_show_title_shop_page() {
+add_action('woocommerce_before_shop_loop', 'woo_show_title_shop_page', 5);
+function woo_show_title_shop_page()
+{
   echo "<div class='cat-title-before-shop'>";
-	echo " Kategorier / "; 
+  echo " Kategorier / ";
   echo single_term_title();
   echo "</div>";
 }
 
 // Remove "Select options" button from (variable) products on the main WooCommerce shop page.
-add_filter( 'woocommerce_loop_add_to_cart_link', function( $product ) {
+add_filter('woocommerce_loop_add_to_cart_link', function ($product) {
 
-	global $product;
+  global $product;
 
-	if ( is_shop() && 'variable' === $product->product_type ) {
-		return '';
-	} else {
-		sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
-			esc_url( $product->add_to_cart_url() ),
-			esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
-			esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
-			isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
-			esc_html( $product->add_to_cart_text() )
-		);
-	}
-
-} );
-
-add_filter( 'woocommerce_get_image_size_thumbnail', 'ci_theme_override_woocommerce_image_size_thumbnail' );
-function ci_theme_override_woocommerce_image_size_thumbnail( $size ) {
-    // Catalog images: specific size
-    return array(
-        'width'  => 300,
-        'height' => 300,
-        'crop'   => 0, // not cropped
+  if (is_shop() && 'variable' === $product->product_type) {
+    return '';
+  } else {
+    sprintf(
+      '<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
+      esc_url($product->add_to_cart_url()),
+      esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
+      esc_attr(isset($args['class']) ? $args['class'] : 'button'),
+      isset($args['attributes']) ? wc_implode_html_attributes($args['attributes']) : '',
+      esc_html($product->add_to_cart_text())
     );
+  }
+});
+
+add_filter('woocommerce_get_image_size_thumbnail', 'ci_theme_override_woocommerce_image_size_thumbnail');
+function ci_theme_override_woocommerce_image_size_thumbnail($size)
+{
+  // Catalog images: specific size
+  return array(
+    'width'  => 300,
+    'height' => 300,
+    'crop'   => 0, // not cropped
+  );
 }
 
 

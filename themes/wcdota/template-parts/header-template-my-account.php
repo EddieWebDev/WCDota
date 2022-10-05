@@ -1,4 +1,4 @@
-<nav id="header-nav" class="my-account-header">
+<nav id="header-nav">
     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
     <div class="header-title">
         <h1 class="site-name">
