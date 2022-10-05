@@ -45,6 +45,9 @@ Version: 1.0
 @import "./css/contact-page/contact-form.css";
 @import "./css/contact-page/contact-text.css";
 
+/* ACCOUNT PAGE */
+@import "./css/account-page/account.css";
+
 * {
   margin: 0;
   padding: 0;
