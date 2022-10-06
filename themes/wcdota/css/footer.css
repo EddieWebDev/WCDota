@@ -7,14 +7,23 @@
 }
 
 .footer-nav {
-    width: 50%;
+    width: 100%;
+    max-width: 60vw;
     display: flex;
     justify-content: space-evenly;
     padding: 5rem;
 }
 
+.footer-nav-menu {
+    padding: 10px;
+}
+.footer-info-menu {
+    padding: 10px;
+}
+
 .footer-nav-menu h2{
     font-family: "Montserrat", sans-serif;
+    font-size: 1.25em;
 }
 
 #menu-footer-nav-menu li {
@@ -27,6 +36,7 @@
 
 .footer-info-menu h2 {
     font-family: "Montserrat", sans-serif;
+    font-size: 1.25em;
 }
 
 #menu-footer-info-menu li {
@@ -46,6 +56,5 @@
 
 .footer-name h2 {
     font-family: "Montserrat", sans-serif;
-    padding-right: 10rem;
-    padding-bottom: 4rem;
+    margin: 0 auto;
 }
