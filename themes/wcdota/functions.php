@@ -30,24 +30,6 @@ function wpb_add_google_fonts()
 }
 add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
 
-// EXCERPT LENGTH SUPPORT ---------------------------------------------
-
-// function new_excerpt_length($length)
-// {
-//   return 25;
-// }
-// add_filter('excerpt_length', 'new_excerpt_length');
-
-
-// add_filter('woocommerce_short_description', 'limit_woocommerce_short_description', 10, 1);
-//     function limit_woocommerce_short_description($post_excerpt){
-//         if (!is_product()) {
-//             $pieces = explode(" ", $post_excerpt);
-//             $post_excerpt = implode(" ", array_splice($pieces, 0, 10));
-
-//         }
-//         return $post_excerpt;
-//     }
 
 // MENU SUPPORT -------------------------------------------------------
 
@@ -315,16 +297,10 @@ global $post; // setup_postdata will not work without this being set (outside of
 <?php
 }
 
-
-
 // CHECKOUT HOOKS ------------------------------------------------------
 
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
-// add_action( "woocommerce_review_order_before_cart_contents", "your_order");
-// function your_order() {
-//   echo "<h3> Your order </h3>";
-// }
 
 // CUSTOM ACF BLOCKS ------------------------------------------------------
 
