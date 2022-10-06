@@ -1,0 +1,100 @@
+.account-header {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce-account #wrapper #header h1 {
+  color: black;
+}
+
+.woocommerce-account #wrapper #header a {
+  color: black;
+}
+
+.woocommerce-account #wrapper #header #header-nav .header-search-cart svg path {
+  fill: black;
+}
+
+/*  my account content covers entire page */
+div.woocommerce .woocommerce-MyAccount-content {
+  float: none;
+  width: 100%;
+}
+
+.my-account-page {
+  margin: 6rem auto 0 auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-title {
+  margin-bottom: 5rem;
+}
+
+.account-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.account-orders h2 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+.account-orders table.shop_table {
+  border: 1px solid gray;
+}
+
+.account-orders table.shop_table a {
+  color: #617c7c;
+}
+
+.account-addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.account-addresses > h2 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+.account-addresses .woocommerce-Addresses {
+  font-size: 0.85em;
+}
+
+.account-addresses .woocommerce-Addresses .title a.edit {
+  color: #617c7c;
+  float: none;
+}
+
+.account-edit-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.account-edit-account > h2 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+.account-edit-account .woocommerce-EditAccountForm input {
+  border: 1px solid gray;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.account-edit-account .woocommerce-EditAccountForm button.woocommerce-Button {
+  margin-top: 1rem;
+}

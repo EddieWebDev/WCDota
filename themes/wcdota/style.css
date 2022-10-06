@@ -25,12 +25,35 @@ Version: 1.0
 /* STORES PAGE */
 @import "./css/stores-page/our-stores.css";
 
-/* NEWS PAGE */
+/* NEWS PAGES */
 @import "./css/news-page/header.css";
 @import "./css/news-page/news-posts.css";
+@import "./css/single-news/single-news.css";
 
 /*  CART PAGE */
 @import "./css/cart/cart.css";
+/*  SINGLE CATEGORY */
+@import "./css/single-category/single-category.css";
+
+/* SEARCH */
+@import "./css/search/search.css";
+
+/* ABOUT PAGE */
+@import "./css/about-page/about-block.css";
+
+/* CONTACT PAGE */
+@import "./css/contact-page/contact-form.css";
+@import "./css/contact-page/contact-text.css";
+
+/*  SINGLE PRODUCT PAGE */
+@import "./css/single-product/single-product.css";
+
+/*  CHECKOUT PAGE */
+@import "./css/checkout/checkout.css";
+
+
+/* ACCOUNT PAGE */
+@import "./css/account-page/account.css";
 
 * {
   margin: 0;
@@ -39,7 +62,6 @@ Version: 1.0
   text-decoration: none;
   list-style: none;
 }
-
 
 /* WRAPPERS */
 

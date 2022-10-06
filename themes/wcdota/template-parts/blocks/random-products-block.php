@@ -21,7 +21,9 @@
                 <div class="random-product-excerpt">
                     <?php the_excerpt(); ?>
                 </div>
-                <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
+                <div class="random-product-button-container">
+                    <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
+                </div>
             </div>
 
             <div class="random-product-thumbnail">
@@ -50,7 +52,9 @@
                 <div class="random-product-excerpt">
                     <?php the_excerpt(); ?>
                 </div>
-                <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
+                <div class="random-product-button-container">
+                    <a class="random-product-link" href="<?php the_permalink(); ?>" id="id-<?php the_id(); ?>">Read More</a>
+                </div>
             </div>
 
             

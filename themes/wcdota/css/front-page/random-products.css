@@ -14,19 +14,29 @@
 
 .random-product-text {
     width: 50%;
-    padding: 6rem 15rem 10rem 10rem;
 }
 
 .random-product-title{
-    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .random-product-title-small {
-    margin-bottom: 8rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 7rem;   
 }
 
 .random-product-excerpt {
-    margin-bottom: 3rem;
+    padding: 1rem;
+
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .random-product-thumbnail {
@@ -50,4 +60,12 @@
     color: white;
     font-size: 0.8rem;
     text-align: center;
+}
+
+.random-product-button-container {
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
