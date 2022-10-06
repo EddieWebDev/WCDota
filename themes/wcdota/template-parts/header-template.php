@@ -7,13 +7,13 @@
             </h1>
         </a>
     </div>
-    
+
     <div class="header-login">
-        <?php if(is_user_logged_in()) : ?>
+        <?php if (is_user_logged_in()) : ?>
             <a href="http://localhost/wcdota/my-account/">My Account</a>
         <?php else : ?>
             <a href="http://localhost/wcdota/my-account/">Log In</a>
-        <?php endif ;?>
+        <?php endif; ?>
     </div>
 
     <div class="header-search-cart">

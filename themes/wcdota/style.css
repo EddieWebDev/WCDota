@@ -52,6 +52,8 @@ Version: 1.0
 @import "./css/checkout/checkout.css";
 
 
+/* ACCOUNT PAGE */
+@import "./css/account-page/account.css";
 
 * {
   margin: 0;
